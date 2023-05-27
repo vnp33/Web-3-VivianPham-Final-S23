@@ -799,6 +799,14 @@
       "oAP" : "\/dev\/content\/hero.kit",
       "oF" : 1
     },
+    "\/dev\/content\/process.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/process.html",
+      "oF" : 0
+    },
     "\/dev\/content\/quality.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1008,18 +1016,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/hero.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/hero-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/dev\/scss\/sections\/hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1030,6 +1026,36 @@
       "ma" : 0,
       "oA" : 2,
       "oAP" : "\/dev\/scss\/sections\/hero.scss",
+      "oF" : 1,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/process.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/dev\/scss\/sections\/process.scss",
+      "oF" : 1,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/quality.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/dev\/scss\/sections\/quality.scss",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
