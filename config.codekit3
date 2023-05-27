@@ -21,6 +21,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 0
+    },
     "\/deploy\/js\/scripts-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -257,7 +265,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 701700550.43463695,
-    "displayValue" : "Web-3-Homework-S23",
+    "displayValue" : "Web-3-VivianPham-Final-S23",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "meme-ron",
     "iconImageWasSetByUser" : 1
