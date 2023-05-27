@@ -1,0 +1,68 @@
+#gallery{
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". gallery .";
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+    ul{
+        display: grid;
+        grid-template-rows: 50vh 75vh;
+
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-rows: 50vh;
+
+        }
+
+        @include lg{
+            grid-area: gallery;
+        }
+
+        @include xxl{
+            grid-template-columns: 70% auto;
+            grid-template-areas: 
+            "g1 g2"
+            "g1 g3";
+
+            grid-template-rows: 40vh 40vh;
+        }
+
+        li{
+            background-position: center;
+            background-size: cover;
+
+        }
+      
+         #g1{
+            background-color: black;
+            background-image: url("../img/gallery/gallery-1.jpg");
+            @include xxl{
+                grid-area: g1;
+            }
+         }
+
+         #g2{
+            background-image: url("../img/gallery/gallery-2.jpg");
+            background-position: center top;
+            @include xxl{
+                background-position: center bottom;
+                grid-area: g2;
+            }
+         }
+
+         #g3{
+            background-image: url("../img/gallery/gallery-3.jpg");
+            display: none;
+            @include xxl{
+                display: list-item;
+                grid-area: g3;
+            }
+         }
+    }
+}

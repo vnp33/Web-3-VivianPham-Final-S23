@@ -1,0 +1,179 @@
+/* =============
+    Footer
+============= */
+footer{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+
+    background-color: var(--blueDark);
+    color: var(--white);
+
+    padding: 16px 0 24px;
+
+    @include md{
+        padding: 24px 0 32px;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div{
+        grid-area: footer;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "f1 f2"
+            "f1 f3";
+            gap: 16px;
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "f1 f2 f3";
+        }
+
+        #f1{
+            margin-bottom: 16px;
+            @include md{
+                grid-area: f1;
+            }
+
+            h1{
+                margin-bottom: 16px;
+                font-size: rem-calc(20);
+                font-weight: 600;
+                color: var(--blue);
+            }
+
+            h2{
+                font-size: rem-calc(16);
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: var(--blue);
+            }
+
+            .f1-content{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+
+                i{
+                    color: var(--yellow);
+                    font-size: rem-calc(25);
+                    margin-right: 8px;
+                }
+            }
+
+            a:link, a:visited{
+                color: white;
+                transition: 0.25s;
+
+                &:hover, &:active{
+                    color: var(--yellow);
+                }
+            }
+
+            .divide-line{
+                height: 1px;
+                width: 100%;
+                background-color: var(--blue);
+                margin: 32px 0;
+            }
+        }
+
+        #f2{
+            margin-top: 48px;
+            @include md{
+                grid-area: f2;
+            }
+
+            @include md{
+                margin-top: 0px;
+            }
+
+            h1{
+                margin-bottom: 16px;
+                font-size: rem-calc(20);
+                font-weight: 600;
+                color: var(--blue);
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    background-color: var(--blueLight);
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                    border-radius: 0;
+                }
+                div{
+                    display: flex;
+                    justify-content: flex-end;
+                    button{
+                        border: none;
+                        color: var(--blueDark);
+                    }
+                }
+                
+            }
+        }
+
+        #f3{
+            @include md{
+                grid-area: f3;
+                margin-top: -60px;
+            }
+
+            @include lg{
+                margin-top: 0;
+            }
+
+            @include xl{
+                text-align: right;
+            }
+
+            h1{
+                margin-bottom: 16px;
+                font-size: rem-calc(20);
+                font-weight: 600;
+                color: var(--blue);
+            }
+
+
+            ul{
+                display: flex;
+
+                @include lg{
+                    justify-content: flex-end;
+
+                }
+
+                li{
+                    margin-right: 16px;
+                    a:link, a:visited{
+                        color: var(--white);
+                        font-size: rem-calc(25);
+
+                        &:hover, &:active{
+                            color: var(--yellow);
+                        }
+                    }
+
+                    @include xl{
+                        margin-right: 0;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
