@@ -771,6 +771,14 @@
       "oAP" : "\/deploy\/thankyou.html",
       "oF" : 0
     },
+    "\/dev\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/checkout.html",
+      "oF" : 0
+    },
     "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -834,6 +842,14 @@
       "oA" : 0,
       "oAP" : "\/dev\/content\/quality.html",
       "oF" : 1
+    },
+    "\/dev\/content\/thankyou-content.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/thankyou-content.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -1156,6 +1172,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/thankyou.html",
+      "oF" : 0
     },
     "\/dev\/thankyou.kit" : {
       "cB" : 0,
