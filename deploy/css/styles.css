@@ -383,13 +383,13 @@ textarea {
     Header
 ============= */
 header #logo-nav {
+  background: var(--redDark);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".  logo-nav .";
 }
 header #logo-nav div {
   grid-area: logo-nav;
-  background: var(--redDark);
 }
 header #search {
   display: grid;
@@ -462,6 +462,11 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". lineup .";
 }
+@media (min-width: 1440px) {
+  #lineup section {
+    grid-template-columns: 30% auto 30%;
+  }
+}
 #lineup section ul {
   grid-area: lineup;
 }
@@ -469,18 +474,35 @@ footer > div {
     buy
 ============= */
 #buy {
+  background-color: var(--tan);
+}
+@media (min-width: 1440px) {
+  #buy {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#buy .buy-left {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". displays .";
 }
-#buy > div {
+#buy .buy-left > div {
   grid-area: displays;
 }
-#buy > div #custom .c-handles img {
+#buy .buy-right {
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". displays .";
+}
+#buy .buy-right div {
+  grid-area: displays;
+}
+#buy .buy-right div ul li .c-handles img {
   width: 54px;
   height: 54px;
   border-radius: 50%;
 }
+
 /* =============
     checkout
 ============= */

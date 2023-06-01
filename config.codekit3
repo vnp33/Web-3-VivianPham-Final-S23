@@ -258,8 +258,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/checkout.html",
-      "oF" : 1
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 3
     },
     "\/dev\/content\/buy.kit" : {
       "cB" : 0,
@@ -651,8 +651,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/thankyou.html",
-      "oF" : 1
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 3
     }
   },
   "hooks" : [
