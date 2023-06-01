@@ -435,6 +435,14 @@ header #search > div form button {
 /* =============
     process
 ============= */
+#process {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". process-content .";
+}
+#process > div {
+  grid-area: process-content;
+}
 /* =============
     lineup
 ============= */
