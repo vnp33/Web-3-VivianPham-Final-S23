@@ -457,6 +457,19 @@ header #search > div form button {
 /* =============
     buy
 ============= */
+#buy {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". displays .";
+}
+#buy > div {
+  grid-area: displays;
+}
+#buy > div #custom .c-handles img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
 /* =============
     checkout
 ============= */

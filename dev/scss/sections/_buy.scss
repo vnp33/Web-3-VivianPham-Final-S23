@@ -2,4 +2,76 @@
     buy
 ============= */
 #buy{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". displays .";
+    >div{
+        grid-area: displays;
+        #displays{
+       
+            ul{
+                li{
+                    .d1{
+    
+                    }
+                    .d1-5{
+    
+                    }
+    
+                    .d2{
+    
+                    }
+    
+                    .d3{
+    
+                    }
+    
+                }
+            }
+        }
+    
+        #custom{
+            h1{
+    
+            }
+    
+            .c-saws{
+                h3{
+    
+                }
+                button{
+    
+                }
+            }
+    
+            .c-blades{
+                h3{
+    
+                }
+                button{
+                    
+                }
+            }
+    
+            .c-handles{
+                h3{
+    
+                }
+                img{
+                    width: 54px;
+                    height: 54px;
+                    border-radius: 50%;
+                }
+            }
+            .c-price{
+                h3{
+    
+                }
+                button{
+                    
+                }
+            }
+        }
+    }
+   
 }
