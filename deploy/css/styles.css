@@ -387,11 +387,6 @@ header #logo-nav {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".  logo-nav .";
 }
-@media (min-width: 1440px) {
-  header #logo-nav {
-    grid-template-columns: 230px auto 230px;
-  }
-}
 header #logo-nav div {
   grid-area: logo-nav;
   background: var(--redDark);

@@ -775,7 +775,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/buy.html",
       "oF" : 1
     },
@@ -783,7 +783,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/checkout-content.html",
       "oF" : 3
     },
@@ -791,7 +791,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 1
     },
@@ -799,7 +799,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/lineup.html",
       "oF" : 1
     },
@@ -807,7 +807,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/process.html",
       "oF" : 1
     },
@@ -815,7 +815,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/quality.html",
       "oF" : 1
     },
