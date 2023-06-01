@@ -2,4 +2,28 @@
     lineup
 ============= */
 #lineup{
+    >div{
+        img{
+
+        }
     }
+    section{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas:". lineup .";
+        h1{
+
+        }
+        ul{
+            grid-area: lineup ;
+            li{
+                img{
+
+                }
+                div{
+
+                }
+            }
+        }
+    }
+}

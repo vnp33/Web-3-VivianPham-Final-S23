@@ -446,6 +446,14 @@ header #search > div form button {
 /* =============
     lineup
 ============= */
+#lineup section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". lineup .";
+}
+#lineup section ul {
+  grid-area: lineup;
+}
 /* =============
     buy
 ============= */
