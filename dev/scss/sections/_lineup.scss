@@ -1,26 +1,30 @@
 /* =============
     lineup
 ============= */
-#lineup{
-    >div{
-        img{
 
-        }
-    }
-    section{
+
+#lineup{
+
+    
+    
+
+    #lineup-bottom{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas:". lineup .";
+        border: 1px solid green;
 
         @include xxl{
                 grid-template-columns: 30% auto 30%;
         }
-        div{
-            h1{
-        }
+
+        >div{
+            grid-area: lineup ;
+            
         }
         ul{
-            grid-area: lineup ;
+            border: 1px solid red;
+            
             li{
                 img{
 

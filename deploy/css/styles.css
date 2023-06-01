@@ -432,16 +432,36 @@ footer > div {
 /* =============
     quality
 ============= */
-#quality {
-  background-color: red;
-}
-#quality > div ul li {
+#quality #quality-bottom {
   display: grid;
-  grid-template: 16px auto 16px;
-  grid-template-areas: ". lineup-content .";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". quality-content .";
 }
-#quality > div ul li section {
-  grid-area: lineup-content;
+#quality #quality-bottom > div {
+  grid-area: quality-content;
+}
+#quality #quality-bottom > div ul {
+  display: grid;
+  gap: 32px;
+  margin-top: 50px;
+}
+#quality #quality-bottom > div ul li {
+  background-color: var(--biege);
+  text-align: center;
+  border-radius: 10px;
+}
+#quality #quality-bottom > div ul li .card-icon {
+  background-color: var(--yellow);
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -25px auto 0;
+}
+#quality #quality-bottom > div ul li section {
+  padding: 16px;
 }
 /* =============
     process
@@ -457,18 +477,22 @@ footer > div {
 /* =============
     lineup
 ============= */
-#lineup section {
+#lineup #lineup-bottom {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". lineup .";
+  border: 1px solid green;
 }
 @media (min-width: 1440px) {
-  #lineup section {
+  #lineup #lineup-bottom {
     grid-template-columns: 30% auto 30%;
   }
 }
-#lineup section ul {
+#lineup #lineup-bottom > div {
   grid-area: lineup;
+}
+#lineup #lineup-bottom ul {
+  border: 1px solid red;
 }
 /* =============
     buy
@@ -506,6 +530,16 @@ footer > div {
 /* =============
     checkout
 ============= */
+#content {
+  background-color: var(--biege);
+  display: grid;
+  grid-template: 16px auto 16px;
+  grid-template-areas: ".content.";
+}
+#content > div {
+  grid-area: content;
+}
+
 /* =============
     thank you
 ============= */
