@@ -2,6 +2,7 @@
     Header
 ============= */
 header{
+    // background-color: red;
     #logo-nav{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -10,7 +11,7 @@ header{
         @include xxl{
             grid-template-columns: 230px auto 230px;
         }
-        >div{
+        div{
             grid-area: logo-nav;
             background: var(--redDark);
         }
@@ -24,10 +25,12 @@ header{
             grid-area: search;
             form{
                 input{
-                    button{ 
-                        background-color: var(--yellow);
+                   
+                }
 
-                    }
+                button{ 
+                    background-color: var(--yellow);
+
                 }
             }
         }
