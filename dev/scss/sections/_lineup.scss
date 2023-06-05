@@ -4,7 +4,9 @@
 
 
 #lineup{
-
+h1{
+    text-align: center;
+}
     
     
 
@@ -12,7 +14,7 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas:". lineup .";
-        border: 1px solid green;
+
 
         @include xxl{
                 grid-template-columns: 30% auto 30%;
@@ -23,9 +25,10 @@
             
         }
         ul{
-            border: 1px solid red;
+            
             
             li{
+                background-color: var(--biege);
                 img{
 
                 }

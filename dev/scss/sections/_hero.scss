@@ -1,13 +1,31 @@
 /* =============
     hero
 ============= */
-#hero{
-    #hero-content{
-        display: grid;
-        grid-template-columns: 100px auto 100px;
-        grid-template-areas: ". hero-content .";
-            aside{
+#hero {
+    #heroimg {
+        img {
+            background-image: url("../img/global/backsawmultiple.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+
+            @include md{
+                height: 500px;
+            }
+            
+            @include xxl{
+                height: 700px;
+            }
+        }
+
+        #hero-content {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-areas: ". hero-content .";
+
+            aside {
                 grid-area: hero-content;
             }
-    }    
+        }
+    }
 }
