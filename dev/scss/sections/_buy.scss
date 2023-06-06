@@ -8,8 +8,82 @@
         grid-template-areas: ".buy.";
     >div{
         grid-area: buy;
-    }
-}
+        #buy1{
+            >div{
+                #d1{
+                    padding-top: 40px;
+                }
+    
+                >div{
+                    
+                }
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    li{
+                        height: 80px;
+                        width: 100px;
+                    }
+                }
+            } 
+        }
+
+        #buy2{
+            color: white;
+            >div{
+                h1{
+
+                }
+                ul{
+               
+                    li{
+
+
+                        section{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            border: 1px solid red;
+                        }
+
+                    //     .c-saw{
+
+
+                    //     }
+                        .c-blades{
+
+                            section{
+                                justify-content: space-around;
+                            }
+
+                        }
+                    //    .c-handles{
+                    //     h3{
+
+                    //     }
+                       
+                        img{
+                           align-content: center;
+                            border-radius: 100px;
+                            height: 30px;
+                            width: 30px;
+                        }
+                       }
+                    //    .c-price{
+                    //     h3{
+                    //     }
+                    //     button{
+
+                    //     }
+                       }
+                    }
+                }
+            }
+        }
+//     }
+// }
 
 
 

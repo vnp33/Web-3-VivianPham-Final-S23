@@ -24,22 +24,24 @@
 
             li {
                 text-align: center;
-                background-color: var(--biege);
-                border-radius: 20px;
+              
                
-
+                
                 .sawimg {
                     height: 140px;
                     width: 140px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: -20px auto 0;
+                    margin:  0 auto -70px;
+
+                    img{
+                        width: 100%;
+                    }
 
                 }
 
                 section {
-                    padding: 24px 20px;
+                    background-color: var(--biege);
+                    border-radius: 20px;
+                    padding: 50px 20px 24px;
 
                     >div {
 

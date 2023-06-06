@@ -347,6 +347,15 @@ ul li {
   margin: 0px;
 }
 
+.redbutton a:link, .redbutton a:visited {
+  color: white;
+  background-color: var(--red);
+  padding: 10px 50px;
+  border-radius: 100px;
+  border: none;
+  display: inline-block;
+}
+
 /* =============
     Typography
 ============= */
@@ -379,6 +388,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -500,40 +513,55 @@ footer > div {
   width: 100%;
 }
 #process #process-content {
-  padding: 120px 0;
   background-color: var(--yellowLight);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". process-content .";
 }
+@media (min-width: 1024px) {
+  #process #process-content {
+    background-color: transparent;
+  }
+}
 #process #process-content > div {
-  padding-bottom: 10px;
   grid-area: process-content;
+}
+@media (min-width: 1024px) {
+  #process #process-content > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#process #process-content > div .video-screen {
+  padding-bottom: 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/process/backsawmade.jpg);
   background-size: cover;
   background-position: center;
   height: 28vh;
-  margin: -200px auto 0;
-}
-#process #process-content > div .playicon {
-  font-size: 3.125rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 65px auto;
+  margin-top: -50px;
+}
+@media (min-width: 1024px) {
+  #process #process-content > div .video-screen {
+    margin-top: 0;
+  }
+}
+#process #process-content > div .video-screen .playicon {
+  font-size: 3.125rem;
 }
 #process #process-content > div aside {
+  background-color: var(--yellowLight);
   margin: 80px 0;
   text-align: center;
 }
-#process #process-content > div aside button {
-  color: white;
-  background-color: var(--red);
-  padding: 10px;
-  border-radius: 100px;
-  border: none;
+@media (min-width: 1024px) {
+  #process #process-content > div aside {
+    margin: 50px 0;
+  }
 }
-
 /* =============
     lineup
 ============= */
@@ -558,19 +586,19 @@ footer > div {
 }
 #lineup #lineup-bottom ul li {
   text-align: center;
-  background-color: var(--biege);
-  border-radius: 20px;
 }
 #lineup #lineup-bottom ul li .sawimg {
   height: 140px;
   width: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: -20px auto 0;
+  margin: 0 auto -70px;
+}
+#lineup #lineup-bottom ul li .sawimg img {
+  width: 100%;
 }
 #lineup #lineup-bottom ul li section {
-  padding: 24px 20px;
+  background-color: var(--biege);
+  border-radius: 20px;
+  padding: 50px 20px 24px;
 }
 /* =============
     buy
@@ -583,6 +611,36 @@ footer > div {
 }
 #buy > div {
   grid-area: buy;
+}
+#buy > div #buy1 > div #d1 {
+  padding-top: 40px;
+}
+#buy > div #buy1 > div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#buy > div #buy1 > div ul li {
+  height: 80px;
+  width: 100px;
+}
+#buy > div #buy2 {
+  color: white;
+}
+#buy > div #buy2 > div ul li section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid red;
+}
+#buy > div #buy2 > div ul li .c-blades section {
+  justify-content: space-around;
+}
+#buy > div #buy2 > div ul li img {
+  align-content: center;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
 }
 
 /* =============
@@ -601,3 +659,30 @@ footer > div {
 /* =============
     thank you
 ============= */
+#thankyou-content {
+  background-image: linear-gradient(rgba(73, 46, 30, 0.8), rgba(73, 46, 30, 0.8)), url(../img/global/backsawmultiple.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+}
+#thankyou-content h1 {
+  padding-bottom: 16px;
+}
+#thankyou-content h2 {
+  padding-bottom: 16px;
+}
+#thankyou-content h2 .order-number {
+  text-decoration: underline;
+}
+#thankyou-content p {
+  padding-bottom: 16px;
+}
+#thankyou-content p .delivery {
+  color: rgb(194, 194, 194);
+}
