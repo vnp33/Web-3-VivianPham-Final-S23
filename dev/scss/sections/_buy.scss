@@ -3,119 +3,46 @@
 ============= */
 #buy{
     background-color: var(--tan);
-    @include xxl{
-        display: grid;
-        grid-template-columns: 50% auto;
-    }
-    .buy-left{
-      
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". displays .";
-
-        >div{
-            grid-area: displays;
-        }
-    }
-    .buy-right{
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". displays .";
-
-        div{
-            grid-area: displays;
-            ul{
-                li{
-                    .c-handles{
-                        img{
-                            width: 54px;
-                            height: 54px;
-                            border-radius: 50%;
-                        }
-                    }
-                }
-            }
-        }
-               
+        grid-template-areas: ".buy.";
+    >div{
+        grid-area: buy;
     }
 }
 
 
 
+//     .buy-left{
+      
+//         display: grid;
+//         grid-template-columns: 16px auto 16px;
+//         grid-template-areas: ". displays .";
 
-// @include xxl{
-//     grid-template-columns: 20% auto 20%;
-    
-//     >div{
-//         grid-area: displays;
-//         #displays{
-       
+//         >div{
+//             grid-area: displays;
+//         }
+//     }
+//     .buy-right{
+//         grid-template-columns: 16px auto 16px;
+//         grid-template-areas: ". displays .";
+
+//         div{
+//             grid-area: displays;
 //             ul{
 //                 li{
-//                     .d1{
-    
+//                     .c-handles{
+//                         img{
+//                             width: 54px;
+//                             height: 54px;
+//                             border-radius: 50%;
+//                         }
 //                     }
-//                     .d1-5{
-    
-//                     }
-    
-//                     .d2{
-    
-//                     }
-    
-//                     .d3{
-    
-//                     }
-    
 //                 }
 //             }
 //         }
- 
-// }
-// }
-
-
-
-
-// #custom{
-//     h1{
-
-//     }
-
-//     .c-saws{
-//         h3{
-
-//         }
-//         button{
-
-//         }
-//     }
-
-//     .c-blades{
-//         h3{
-
-//         }
-//         button{
-            
-//         }
-//     }
-
-//     .c-handles{
-//         h3{
-
-//         }
-//         img{
-//             width: 54px;
-//             height: 54px;
-//             border-radius: 50%;
-//         }
-//     }
-//     .c-price{
-//         h3{
-
-//         }
-//         button{
-            
-//         }
+               
 //     }
 // }
-// }
+
+

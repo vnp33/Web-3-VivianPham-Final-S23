@@ -420,29 +420,36 @@ footer > div {
 /* =============
     hero
 ============= */
-#hero #heroimg img {
+#hero {
   background-image: url("../img/global/backsawmultiple.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 50vh;
 }
-@media (min-width: 768px) {
-  #hero #heroimg img {
-    height: 500px;
-  }
-}
-@media (min-width: 1440px) {
-  #hero #heroimg img {
-    height: 700px;
-  }
-}
-#hero #heroimg #hero-content {
+#hero > div #hero-content {
+  padding: 60px;
   display: grid;
-  grid-template-columns: 100px auto 100px;
+  grid-template-columns: 5px auto 5px;
   grid-template-areas: ". hero-content .";
 }
-#hero #heroimg #hero-content aside {
+#hero > div #hero-content > div {
   grid-area: hero-content;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#hero > div #hero-content > div h1 {
+  color: var(--yellow);
+}
+#hero > div #hero-content > div p {
+  color: white;
+}
+#hero > div #hero-content > div button {
+  color: white;
+  background-color: var(--red);
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
 }
 
 /* =============
@@ -486,14 +493,46 @@ footer > div {
 /* =============
     process
 ============= */
-#process {
+#process > div {
+  padding-bottom: 100px;
+}
+#process > div img {
+  width: 100%;
+}
+#process #process-content {
+  padding: 120px 0;
+  background-color: var(--yellowLight);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". process-content .";
 }
-#process > div {
+#process #process-content > div {
   grid-area: process-content;
+  background-image: url(../img/process/backsawmade.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 28vh;
+  margin: -200px auto 0;
 }
+#process #process-content > div .playicon {
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 65px auto;
+}
+#process #process-content > div aside {
+  margin: 80px 0;
+  text-align: center;
+}
+#process #process-content > div aside button {
+  color: white;
+  background-color: var(--red);
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+}
+
 /* =============
     lineup
 ============= */
@@ -503,12 +542,10 @@ footer > div {
 #lineup #lineup-bottom {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". lineup .";
+  grid-template-areas: ". lineup-bot .";
 }
-@media (min-width: 1440px) {
-  #lineup #lineup-bottom {
-    grid-template-columns: 30% auto 30%;
-  }
+#lineup #lineup-bottom > div {
+  grid-area: lineup-bot;
 }
 #lineup #lineup-bottom > div {
   grid-area: lineup;
@@ -521,32 +558,12 @@ footer > div {
 ============= */
 #buy {
   background-color: var(--tan);
-}
-@media (min-width: 1440px) {
-  #buy {
-    display: grid;
-    grid-template-columns: 50% auto;
-  }
-}
-#buy .buy-left {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". displays .";
+  grid-template-areas: ".buy.";
 }
-#buy .buy-left > div {
-  grid-area: displays;
-}
-#buy .buy-right {
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". displays .";
-}
-#buy .buy-right div {
-  grid-area: displays;
-}
-#buy .buy-right div ul li .c-handles img {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
+#buy > div {
+  grid-area: buy;
 }
 
 /* =============

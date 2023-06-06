@@ -2,30 +2,41 @@
     hero
 ============= */
 #hero {
-    #heroimg {
-        img {
-            background-image: url("../img/global/backsawmultiple.jpg");
-            background-position: center;
-            background-size: cover;
-            height: 300px;
-
-            @include md{
-                height: 500px;
-            }
-            
-            @include xxl{
-                height: 700px;
-            }
-        }
-
+    background-image: url("../img/global/backsawmultiple.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+        
+    >div{
         #hero-content {
+            padding: 60px;
             display: grid;
-            grid-template-columns: 100px auto 100px;
+            grid-template-columns: 5px auto 5px;
             grid-template-areas: ". hero-content .";
 
-            aside {
+            >div{
                 grid-area: hero-content;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                
+
+                h1{
+                    color: var(--yellow) ;
+                }
+    
+                p{
+                    color: white
+                }
+                button{
+                    color: white;
+                    background-color: var(--red);
+                    padding: 10px;
+                    border-radius: 100px;
+                    border: none;
+                }
             }
         }
-    }
+    }    
 }
+ 
