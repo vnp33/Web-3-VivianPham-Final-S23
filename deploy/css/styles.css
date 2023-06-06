@@ -421,7 +421,7 @@ footer > div {
     hero
 ============= */
 #hero {
-  background-image: url("../img/global/backsawmultiple.jpg");
+  background-image: linear-gradient(rgba(73, 46, 30, 0.76), rgba(73, 46, 30, 0.76)), url("../img/global/backsawmultiple.jpg");
   background-position: center;
   background-size: cover;
   height: 50vh;
@@ -494,7 +494,7 @@ footer > div {
     process
 ============= */
 #process > div {
-  padding-bottom: 100px;
+  padding: 20px 0px 100px;
 }
 #process > div img {
   width: 100%;
@@ -507,8 +507,9 @@ footer > div {
   grid-template-areas: ". process-content .";
 }
 #process #process-content > div {
+  padding-bottom: 10px;
   grid-area: process-content;
-  background-image: url(../img/process/backsawmade.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/process/backsawmade.jpg);
   background-size: cover;
   background-position: center;
   height: 28vh;
@@ -536,6 +537,9 @@ footer > div {
 /* =============
     lineup
 ============= */
+#lineup {
+  padding-top: 24px;
+}
 #lineup h1 {
   text-align: center;
 }
@@ -547,11 +551,26 @@ footer > div {
 #lineup #lineup-bottom > div {
   grid-area: lineup-bot;
 }
-#lineup #lineup-bottom > div {
-  grid-area: lineup;
+#lineup #lineup-bottom ul {
+  display: grid;
+  gap: 90px;
+  margin-top: 40px;
 }
 #lineup #lineup-bottom ul li {
+  text-align: center;
   background-color: var(--biege);
+  border-radius: 20px;
+}
+#lineup #lineup-bottom ul li .sawimg {
+  height: 140px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -20px auto 0;
+}
+#lineup #lineup-bottom ul li section {
+  padding: 24px 20px;
 }
 /* =============
     buy

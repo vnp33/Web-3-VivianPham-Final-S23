@@ -1,37 +1,49 @@
 /* =============
     lineup
 ============= */
-#lineup{
-    h1{
+#lineup {
+    padding-top: 24px;
+
+    h1 {
         text-align: center;
     }
 
-    #lineup-bottom{
+    #lineup-bottom {
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas:". lineup-bot .";
+        grid-template-areas: ". lineup-bot .";
 
-        >div{
+        >div {
             grid-area: lineup-bot;
         }
 
+        ul {
+            display: grid;
+            gap: 90px;
+            margin-top: 40px;
 
-    
-
-        >div{
-            grid-area: lineup ;
-            
-        }
-        ul{
-            
-            
-            li{
+            li {
+                text-align: center;
                 background-color: var(--biege);
-                img{
+                border-radius: 20px;
+               
+
+                .sawimg {
+                    height: 140px;
+                    width: 140px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: -20px auto 0;
 
                 }
-                div{
 
+                section {
+                    padding: 24px 20px;
+
+                    >div {
+
+                    }
                 }
             }
         }
