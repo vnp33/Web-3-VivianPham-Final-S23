@@ -2,13 +2,88 @@
     Footer
 ============= */
 footer{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: " .footer. ";
-    background-color: var(--redDark);
-    color: white;
-    >div{
-        grid-area: footer;
+    h1{
+        font-weight: 700;
+        font-size: 16px;
     }
+
+    p{
+        font-size: 14px;
+    }
+    background-color: var(--redDark);
+    #footer-top{
+        display: grid;
+        grid-template-columns: 32% auto;
+        grid-template-areas: " .footer-top. ";
+        >div{
+          grid-area: footer-top;
+          padding: 24px 0px;
+        }
+    }
+
+    #footer-content{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: " .footer. ";
+
+        >div{
+            grid-area: footer;
     
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-template-areas: 
+            "f2 f3 f4"
+            "f5 f5 f5";
+            gap: 16px;
+    
+            h1{
+                color: var(--yellow);}
+    
+                p{ color: white;}
+    
+                a{ color: white;}
+            #f2{
+                grid-area: f2;
+               
+            }
+    
+            #f3{
+                grid-area: f3;
+            }
+    
+            #f4{
+                grid-area: f4;
+                ul{
+                    display: flex; 
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    li{
+                    
+                    }
+                }
+            }
+            #f5{
+                grid-area: f5;
+            }
+        }
+    }
+    #f6{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". f6 .";
+        color: white;
+       .divide-line{
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        margin: 16px 0;
+        p{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            span{
+            }
+        }
+    }
+    }
 }

@@ -2,11 +2,24 @@
     checkout
 ============= */
 #content{
-    background-color: var(--biege);
     display: grid; 
     grid-template: 16px auto 16px;
     grid-template-areas: ".content.";
+
     >div{
+        background-color: var(--biege);
         grid-area: content;
+
+        #cart{
+            >div{
+                display: grid;
+                grid-template-columns:80% auto;
+                grid-template-areas: ".cartheading.";
+
+                section{
+                    grid-area: cartheading;
+                }
+            }
+        }
     }
 }

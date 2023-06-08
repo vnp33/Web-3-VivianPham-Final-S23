@@ -359,6 +359,10 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
@@ -420,16 +424,79 @@ header #search > div form button {
     Footer
 ============= */
 footer {
+  background-color: var(--redDark);
+}
+footer h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+footer p {
+  font-size: 14px;
+}
+footer #footer-top {
+  display: grid;
+  grid-template-columns: 32% auto;
+  grid-template-areas: " .footer-top. ";
+}
+footer #footer-top > div {
+  grid-area: footer-top;
+  padding: 24px 0px;
+}
+footer #footer-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: " .footer. ";
-  background-color: var(--redDark);
+}
+footer #footer-content > div {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "f2 f3 f4" "f5 f5 f5";
+  gap: 16px;
+}
+footer #footer-content > div h1 {
+  color: var(--yellow);
+}
+footer #footer-content > div p {
   color: white;
 }
-footer > div {
-  grid-area: footer;
+footer #footer-content > div a {
+  color: white;
 }
-
+footer #footer-content > div #f2 {
+  grid-area: f2;
+}
+footer #footer-content > div #f3 {
+  grid-area: f3;
+}
+footer #footer-content > div #f4 {
+  grid-area: f4;
+}
+footer #footer-content > div #f4 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer #footer-content > div #f5 {
+  grid-area: f5;
+}
+footer #f6 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". f6 .";
+  color: white;
+}
+footer #f6 .divide-line {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+  margin: 16px 0;
+}
+footer #f6 .divide-line p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
 /* =============
     hero
 ============= */
@@ -647,13 +714,21 @@ footer > div {
     checkout
 ============= */
 #content {
-  background-color: var(--biege);
   display: grid;
   grid-template: 16px auto 16px;
   grid-template-areas: ".content.";
 }
 #content > div {
+  background-color: var(--biege);
   grid-area: content;
+}
+#content > div #cart > div {
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-template-areas: ".cartheading.";
+}
+#content > div #cart > div section {
+  grid-area: cartheading;
 }
 
 /* =============
