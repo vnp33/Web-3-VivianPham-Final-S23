@@ -31,6 +31,7 @@
         }
 
         #buy2{
+            
             color: white;
             >div{
                 h1{
@@ -41,28 +42,54 @@
                     li{
 
 
-                        section{
+                        aside{
                             display: flex;
-                            justify-content: space-between;
-                            width: 100%;
-                            border: 1px solid red;
-                        }
+                            justify-content: space-around;
 
-                    //     .c-saw{
-
-
-                    //     }
-                        .c-blades{
-
-                            section{
-                                justify-content: space-around;
+                            button{
+                                // border: 1px solid blue;
+                                background-color: red;
+                                padding: 10px 20px;
                             }
+                            
+                        }
+
+                        
+
+
+                        #c-saw{
+                            // color: p;
+                            // display: flex;
+                            // justify-content: space-evenly;
+                            // width: 100%;
+                            // >div{
+                               
+                                
+                            //     h3{
+                            //         aside{
+                            //             button{
+                            //                 border-radius: 0%;
+                            //             }
+                            //         }
+                            //     }
+                            // }
 
                         }
-                    //    .c-handles{
-                    //     h3{
 
-                    //     }
+                        
+
+                        
+                        // .c-blades{
+
+                        //     section{
+                        //         justify-content: space-around;
+                        //     }
+
+                        // }
+                       .c-handles{
+                        // h3{
+
+                        // }
                        
                         img{
                            align-content: center;
@@ -82,41 +109,4 @@
                 }
             }
         }
-//     }
-// }
-
-
-
-//     .buy-left{
-      
-//         display: grid;
-//         grid-template-columns: 16px auto 16px;
-//         grid-template-areas: ". displays .";
-
-//         >div{
-//             grid-area: displays;
-//         }
-//     }
-//     .buy-right{
-//         grid-template-columns: 16px auto 16px;
-//         grid-template-areas: ". displays .";
-
-//         div{
-//             grid-area: displays;
-//             ul{
-//                 li{
-//                     .c-handles{
-//                         img{
-//                             width: 54px;
-//                             height: 54px;
-//                             border-radius: 50%;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-               
-//     }
-// }
-
-
+    }

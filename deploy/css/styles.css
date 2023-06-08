@@ -399,6 +399,9 @@ a {
 /* =============
     Header
 ============= */
+header {
+  color: white;
+}
 header #logo-nav {
   background: var(--redDark);
   display: grid;
@@ -487,12 +490,13 @@ footer #f6 {
   color: white;
 }
 footer #f6 .divide-line {
+  border: 1px solid #000;
   height: 1px;
   background-color: white;
   width: 100%;
   margin: 16px 0;
 }
-footer #f6 .divide-line p {
+footer #f6 > div p {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -506,30 +510,72 @@ footer #f6 .divide-line p {
   background-size: cover;
   height: 50vh;
 }
+@media (min-width: 1024px) {
+  #hero {
+    height: 30vh;
+  }
+}
 #hero > div #hero-content {
-  padding: 60px;
+  padding: 70px 0px;
   display: grid;
-  grid-template-columns: 5px auto 5px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content {
+    padding: 220px 600px 0px 100px;
+  }
 }
 #hero > div #hero-content > div {
   grid-area: hero-content;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content > div {
+    text-align: left;
+  }
 }
 #hero > div #hero-content > div h1 {
   color: var(--yellow);
+  font-family: "Merriweather", sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content > div h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 16px;
+  }
 }
 #hero > div #hero-content > div p {
   color: white;
+  padding-bottom: 8px;
+  font-size: 14px;
+  padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content > div p {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 16px;
+  }
 }
 #hero > div #hero-content > div button {
+  font-size: 700;
   color: white;
   background-color: var(--red);
-  padding: 10px;
-  border-radius: 100px;
+  padding: 10px 40px;
+  border-radius: 50px;
   border: none;
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content > div button {
+    padding: 20px 80px;
+  }
 }
 
 /* =============
@@ -657,10 +703,11 @@ footer #f6 .divide-line p {
 #lineup #lineup-bottom ul li .sawimg {
   height: 140px;
   width: 140px;
-  margin: 0 auto -70px;
+  margin: 0px auto -70px;
 }
 #lineup #lineup-bottom ul li .sawimg img {
-  width: 100%;
+  height: 15vh;
+  width: 20vh;
 }
 #lineup #lineup-bottom ul li section {
   background-color: var(--biege);
@@ -694,41 +741,40 @@ footer #f6 .divide-line p {
 #buy > div #buy2 {
   color: white;
 }
-#buy > div #buy2 > div ul li section {
+#buy > div #buy2 > div ul li aside {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid red;
-}
-#buy > div #buy2 > div ul li .c-blades section {
   justify-content: space-around;
 }
-#buy > div #buy2 > div ul li img {
+#buy > div #buy2 > div ul li aside button {
+  background-color: red;
+  padding: 10px 20px;
+}
+#buy > div #buy2 > div ul li .c-handles img {
   align-content: center;
   border-radius: 100px;
   height: 30px;
   width: 30px;
 }
 
-/* =============
-    checkout
-============= */
-#content {
+#checkout-content {
   display: grid;
-  grid-template: 16px auto 16px;
-  grid-template-areas: ".content.";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". checkout-content .";
 }
-#content > div {
+#checkout-content > div {
+  grid-area: checkout-content;
   background-color: var(--biege);
-  grid-area: content;
+  padding: 16px;
 }
-#content > div #cart > div {
-  display: grid;
-  grid-template-columns: 80% auto;
-  grid-template-areas: ".cartheading.";
+#checkout-content > div #cart ul li aside {
+  display: flex;
 }
-#content > div #cart > div section {
-  grid-area: cartheading;
+#checkout-content > div #cart ul li aside h1 {
+  font-size: 1rem;
+}
+#checkout-content > div #cart ul li input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* =============

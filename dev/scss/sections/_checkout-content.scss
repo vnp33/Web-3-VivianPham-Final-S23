@@ -1,25 +1,97 @@
-/* =============
-    checkout
-============= */
-#content{
-    display: grid; 
-    grid-template: 16px auto 16px;
-    grid-template-areas: ".content.";
+// /* =============
+//     checkout
+// ============= */
+// #content{
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". content .";
+//     >div{
+//         grid-area: content;
 
-    >div{
+//         #checkout{
+//             background-color: var(--biege);
+//             display: flex;
+//             flex-direction: column;
+//             border-radius: 5px; 
+//             >div{
+//                 #cart{
+//                     div{
+//                      display: flex;
+//                      justify-content: space-between;
+//                      align-content: end;
+//                     padding: 10px 0px;
+//                     img{
+//                         height: 15vh ;
+//                         width: 25vh ;
+//                     }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//         #cart2{
+//         margin-top: 24px;
+//         background-color: var(--biege);
+//         display: grid;
+//         grid-template-columns: 16px auto 16px;
+//         grid-template-areas: ". cart2 .";
+//         >div{
+//             #billing{
+
+//             }
+//         }
+//         }
+//     }
+
+
+#checkout-content {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". checkout-content .";
+
+    >div {
+        grid-area: checkout-content;
         background-color: var(--biege);
-        grid-area: content;
+        padding: 16px;
 
-        #cart{
-            >div{
-                display: grid;
-                grid-template-columns:80% auto;
-                grid-template-areas: ".cartheading.";
+        #cart {
+            ul {
+                li {
+                    
+                    aside {
+                        display: flex;
+                        h1{
+                            font-size: rem-calc(16px);
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
 
-                section{
-                    grid-area: cartheading;
+                    // section {
+                    //     margin-right: auto;
+
+                    //     .left-side {
+                    //         h1 {
+                    //             font-family: 'Merriweather', sans-serif;
+                    //             font-size: rem-calc(15px);
+                    //         }
+                    //     }
+
+                    //     .form{
+                    //         border: 1px solid #000;
+                    //         width: 100%;
+                    //         input{
+                    //             width: 100%;
+                    //         }
+                        
+                
+                    // }
                 }
             }
         }
     }
 }
+// }

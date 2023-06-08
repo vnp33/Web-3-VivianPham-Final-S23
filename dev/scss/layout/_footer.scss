@@ -68,15 +68,21 @@ footer{
         }
     }
     #f6{
+       
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". f6 .";
         color: white;
+
        .divide-line{
+        border: 1px solid #000;
         height: 1px;
         background-color: white;
         width: 100%;
         margin: 16px 0;
+    }
+    >div{
+      
         p{
             font-size: 12px;
             font-weight: 400;
@@ -85,5 +91,6 @@ footer{
             }
         }
     }
+   
     }
 }
