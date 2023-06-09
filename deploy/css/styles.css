@@ -400,13 +400,13 @@ button {
 
 .redbutton {
   background-color: var(--red);
-  padding: 16px 30px;
+  padding: 14px 50px;
   display: inline-block;
   color: white;
   font-weight: 700;
   font-size: 0.875rem;
   transition: 0.25s;
-  border-radius: 50px;
+  border-radius: 100px;
   border: none;
 }
 .redbutton:hover {
@@ -671,7 +671,7 @@ footer #f6 > div p {
   background-color: var(--biege);
   text-align: center;
   border-radius: 10px;
-  padding: 84px 0px 40px;
+  padding: 50px 0px 10px;
 }
 @media (min-width: 1024px) {
   #quality #quality-bottom > div ul li {
@@ -719,7 +719,7 @@ footer #f6 > div p {
   }
 }
 #quality #quality-bottom > div ul li section {
-  padding: 30px;
+  padding: 30px 16px;
 }
 @media (min-width: 1024px) {
   #quality #quality-bottom > div ul li section {
@@ -758,15 +758,17 @@ footer #f6 > div p {
 @media (min-width: 1024px) {
   #process #process-content {
     background-color: transparent;
+    grid-template-columns: 0px auto 0px;
   }
 }
 #process #process-content > div {
   grid-area: process-content;
+  padding-top: 24px;
 }
 @media (min-width: 1024px) {
   #process #process-content > div {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 60% auto;
   }
 }
 #process #process-content > div .video-screen {
@@ -774,31 +776,58 @@ footer #f6 > div p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/process/backsawmade.jpg);
   background-size: cover;
   background-position: center;
-  height: 28vh;
+  height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: -50px;
+  margin: -100px auto 0;
+  font-size: 3.125rem;
 }
 @media (min-width: 1024px) {
   #process #process-content > div .video-screen {
     margin-top: 0;
+    font-size: 6.25rem;
+    height: 40vh;
+    width: 100%;
   }
-}
-#process #process-content > div .video-screen .playicon {
-  font-size: 3.125rem;
 }
 #process #process-content > div aside {
   background-color: var(--yellowLight);
-  margin: 80px 0;
+  margin: 24px 0;
   text-align: center;
 }
 @media (min-width: 1024px) {
   #process #process-content > div aside {
-    margin: 50px 0;
+    margin: 70px 0;
+    text-align: left;
+    padding: 150px 0px 0px 100px;
   }
 }
+#process #process-content > div aside h2 {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+@media (min-width: 1024px) {
+  #process #process-content > div aside h2 {
+    font-size: 32px;
+    padding-bottom: 16px;
+  }
+}
+#process #process-content > div aside p {
+  font-size: 16px;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  #process #process-content > div aside p {
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+}
+
 /* =============
     lineup
 ============= */

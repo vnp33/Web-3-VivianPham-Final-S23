@@ -23,13 +23,13 @@ button{
 
 .redbutton{
     background-color: var(--red);
-    padding: 16px 30px;
+    padding: 14px 50px;
     display: inline-block;
     color: white;
     font-weight: 700;
     font-size: rem-calc(14);
     transition: 0.25s;
-    border-radius: 50px;
+    border-radius: 100px;
     border: none;
 
     &:hover{

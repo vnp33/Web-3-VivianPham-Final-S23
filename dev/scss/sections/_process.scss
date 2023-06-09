@@ -7,13 +7,14 @@
         img{
             width: 100%;
         }
+
+        @include lg{
+        }
     }
 
 
     #process-content{
 
-        
-        // padding: 120px 0;
         background-color: var(--yellowLight);
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -21,58 +22,80 @@
 
         @include lg{
             background-color: transparent;
+            grid-template-columns: 0px auto 0px;
         }
+        
 
         >div{
             grid-area: process-content;
 
+            padding-top: 24px;
+
             @include lg{
                 display: grid;
-                grid-template-columns: 50% auto;
+                grid-template-columns: 60% auto;
             }
 
             .video-screen{
                 padding-bottom: 10px;
-              
                 background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.7)), url(../img/process/backsawmade.jpg);
               
                 
                 background-size: cover;
                 background-position: center;
-                height: 28vh;
+                height: 30vh;
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-top: -50px;
-                // margin: -200px auto 0;
+                margin: -100px auto 0;
+                font-size: rem-calc(50);
 
                 @include lg{
                     margin-top: 0;
-                }
-                
-                .playicon{
-                   font-size: rem-calc(50);
-                
-                   
+                    font-size: rem-calc(100);
+                    height: 40vh;
+                    width: 100%;
+
                 }
             }
-               
-                
-    
+            
                 aside{
                     background-color: var(--yellowLight);
-                    margin: 80px 0;
+                    margin: 24px 0;
                     text-align: center;
 
                     @include lg{
-                        margin: 50px 0;
+                        margin: 70px 0;
+                        text-align: left;
+                        padding: 150px 0px 0px 100px;
                     }
                     h2{
-    
+                        font-family: 'Merriweather', serif;
+                        font-size: 20px;
+                        padding-bottom: 8px;
+
+                        @include lg{
+                            font-size: 32px;
+                            padding-bottom: 16px;
+
+                        }
+
+
                     }
                     p{
-    
+                        font-size: 16px;
+                        padding-bottom: 8px;
+                        font-weight: 500;
+
+                        @include lg{
+                            font-size: 20px;
+                            padding-bottom: 16px;
+
+                        }
+
+
                     }
                 }
             
