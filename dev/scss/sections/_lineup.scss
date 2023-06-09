@@ -2,10 +2,13 @@
     lineup
 ============= */
 #lineup {
-    padding-top: 24px;
-
     h1 {
+        margin: -32px 0px 60px;
         text-align: center;
+
+        @include lg{
+
+        }
     }
 
     #lineup-bottom {
@@ -13,14 +16,26 @@
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". lineup-bot .";
 
+        @include lg{
+            grid-template-columns: 136px auto 136px;
+        }
+
         >div {
             grid-area: lineup-bot;
+            
+            @include lg{
+                grid-area: lineup-bot ;
+            }
         }
 
         ul {
             display: grid;
-            gap: 90px;
+            gap: 30px;
             margin-top: 40px;
+
+            @include lg{
+                gap: 100px;
+            }
 
             li {
                 text-align: center;
@@ -30,11 +45,20 @@
                 .sawimg {
                     height: 140px;
                     width: 140px;
-                    margin:  0px auto -70px;
+                    margin:  0px 90px -70px;
+
+                    @include lg{
+                        margin:  0px 90px -100px;
+                    }
 
                     img{
-                        height: 15vh;
-                        width: 20vh;
+                        height: 20vh;
+                        width: 25vh;
+
+                        @include lg{
+                            height: 18vh;
+                            width: 20vh;
+                        }
 
                     }
 
@@ -43,9 +67,35 @@
                 section {
                     background-color: var(--biege);
                     border-radius: 20px;
-                    padding: 50px 20px 24px;
+                    padding: 84px 36px 50px;
+
+                    @include lg{
+                        padding: 40px 40px ;
+                    }
+
 
                     >div {
+                        @include lg{
+                            padding: 0px 0px 0px 400px;
+                            text-align: left;
+                        }
+                        h2{
+                            font-size: 16px;
+
+                            @include lg{
+                                font-size: 24px;
+                            }
+                        }
+                        p{
+                            font-size: 14px ;
+                            line-height: 20px;
+                            font-weight: 400;
+
+                            @include lg{
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
 
                     }
                 }

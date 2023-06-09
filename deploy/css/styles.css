@@ -377,6 +377,17 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+.header-text {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .header-text {
+    font-size: 40px;
+  }
+}
+
 /* =============
     Buttons
 ============= */
@@ -831,10 +842,8 @@ footer #f6 > div p {
 /* =============
     lineup
 ============= */
-#lineup {
-  padding-top: 24px;
-}
 #lineup h1 {
+  margin: -32px 0px 60px;
   text-align: center;
 }
 #lineup #lineup-bottom {
@@ -842,13 +851,28 @@ footer #f6 > div p {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". lineup-bot .";
 }
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom {
+    grid-template-columns: 136px auto 136px;
+  }
+}
 #lineup #lineup-bottom > div {
   grid-area: lineup-bot;
 }
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom > div {
+    grid-area: lineup-bot;
+  }
+}
 #lineup #lineup-bottom ul {
   display: grid;
-  gap: 90px;
+  gap: 30px;
   margin-top: 40px;
+}
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul {
+    gap: 100px;
+  }
 }
 #lineup #lineup-bottom ul li {
   text-align: center;
@@ -856,17 +880,59 @@ footer #f6 > div p {
 #lineup #lineup-bottom ul li .sawimg {
   height: 140px;
   width: 140px;
-  margin: 0px auto -70px;
+  margin: 0px 90px -70px;
+}
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul li .sawimg {
+    margin: 0px 90px -100px;
+  }
 }
 #lineup #lineup-bottom ul li .sawimg img {
-  height: 15vh;
-  width: 20vh;
+  height: 20vh;
+  width: 25vh;
+}
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul li .sawimg img {
+    height: 18vh;
+    width: 20vh;
+  }
 }
 #lineup #lineup-bottom ul li section {
   background-color: var(--biege);
   border-radius: 20px;
-  padding: 50px 20px 24px;
+  padding: 84px 36px 50px;
 }
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul li section {
+    padding: 40px 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul li section > div {
+    padding: 0px 0px 0px 400px;
+    text-align: left;
+  }
+}
+#lineup #lineup-bottom ul li section > div h2 {
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul li section > div h2 {
+    font-size: 24px;
+  }
+}
+#lineup #lineup-bottom ul li section > div p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  #lineup #lineup-bottom ul li section > div p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 /* =============
     buy
 ============= */

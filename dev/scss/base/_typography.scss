@@ -7,9 +7,18 @@ body{
     // font-family: 'Merriweather', serif;
 }
 
-h1{}
 
 h1,h2,h3,h4,h5,p{
     margin: 0;
     padding: 0;
+}
+
+.header-text{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    @include lg{
+        font-size: 40px;
+    }
 }
