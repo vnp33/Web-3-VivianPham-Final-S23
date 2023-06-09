@@ -1,61 +1,156 @@
 /* =============
     quality
 ============= */
-#quality {
+#quality{
+
+//  padding:24px 0px;
+
+ h1{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    padding-top: 16px;
+
+    @include lg{
+        font-size: 40px;
+        padding-bottom: 40px;
+        margin-top: -54px;
+    }
+ }
 
 #quality-bottom {
-    
+
+    h1{
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 40px;
+
+    }
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". quality-content .";
+    text-align: center;
 
-            >div{
-                grid-area: quality-content;
+    @include lg{
+        grid-template-columns: 136px auto 136px;
+
+
+    }
+
+
+    >div {
+        grid-area: quality-content;
+
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 24px;
+            padding: 16px;
+        }
+
+        ul {
+
+            @include lg{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas: " q1 q2 q3";
+                text-align: center;
+                }
+
+            display: grid;
+            gap: 70px;
+            margin-top: 70px;
+
             
-                ul {
 
-                    display: grid;
-                    gap: 70px;
-                    margin-top: 70px;
 
-                   
-                    li {  
-                        background-color: var(--biege);
-                        text-align: center;
-                        border-radius: 10px;
-                        padding: 84px 34px 74px;
-                        
-                        .card-icon{
-                            background-color: var(--yellow);
+            li {
+                background-color: var(--biege);
+                text-align: center;
+                border-radius: 10px;
+                padding: 84px 0px 40px;
 
-                            border-radius: 100%;
-                            height: 95px;
-                            width: 95px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            
-                            margin: -130px auto 0;
+                @include lg{
+                    padding: 84px 42px 70px;
+                    
+                }
 
-                            i{
-                                font-size: rem-calc(40);
-                            }
+                #q1{
+                    @include lg{
+                        grid-area: q1;
+                    }
+                }
+
+                #q2{
+                    @include lg{
+                        grid-area: q2;
+                    }
+                }
+
+                #q3{
+                    @include lg{
+                        grid-area: q3;
+                    }
+                }
+
+                .card-icon {
+                    background-color: var(--yellow);
+
+                    border-radius: 100%;
+                    height: 95px;
+                    width: 95px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin: -130px auto 0;
+
+                    @include lg{
+                        height: 140px;
+                        width: 140px;
+                        margin: -180px auto 0;
+                    }
+
+                    i {
+                        font-size: rem-calc(40);
+
+                        @include lg{
+                            font-size: rem-calc(50);
                         }
+                    }
+                }
+
+                section {
+                    padding: 30px;
+
+                    @include lg{
+                        padding: 40px 4px 4px ;
                         
-                        section {
-                            padding: 16px;
-                            
-            
-                            div {
-                               
+                    }
+
+                    >div {
+                        h2{
+                            font-size: 20px;
+                           padding-bottom: 8px;
+
+                           @include lg{
+                            font-size: 24px;
+                            font-weight: 700;
+                           }
+                        }
+
+                        p{
+                            font-size: 16px;
+                            line-height: 25px;
+
+                            @include lg{
+
                             }
                         }
                     }
                 }
             }
-    
-  
+        }
+    }
 }
-   
 }
-

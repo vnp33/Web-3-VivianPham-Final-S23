@@ -1,7 +1,13 @@
 /* =============
     Base
 ============= */
+.padding-content{
+    padding-top: 24px; 
 
+    @include lg{
+        padding-top: 60px;
+    }
+}
 
 .resize-img{
     width: 100%;

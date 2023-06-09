@@ -333,6 +333,15 @@ template {
 /* =============
     Base
 ============= */
+.padding-content {
+  padding-top: 24px;
+}
+@media (min-width: 1024px) {
+  .padding-content {
+    padding-top: 60px;
+  }
+}
+
 .resize-img {
   width: 100%;
 }
@@ -371,6 +380,45 @@ h1, h2, h3, h4, h5, p {
 /* =============
     Buttons
 ============= */
+button {
+  cursor: pointer;
+}
+
+.redlink:link, .redlink:visited {
+  background-color: var(--redDark);
+  padding: 12px 16px;
+  display: inline-block;
+  margin-top: 8px;
+  color: black;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: 0.25s;
+}
+.redlink:link:hover, .redlink:link:active, .redlink:visited:hover, .redlink:visited:active {
+  background-color: var(--redDark);
+}
+
+.redbutton {
+  background-color: var(--red);
+  padding: 16px 30px;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: 0.25s;
+  border-radius: 50px;
+  border: none;
+}
+.redbutton:hover {
+  background-color: var(--redDark);
+}
+@media (min-width: 1024px) {
+  .redbutton {
+    padding: 20px 80px;
+    font-size: 20px;
+  }
+}
+
 /* =============
     Forms
 ============= */
@@ -512,18 +560,18 @@ footer #f6 > div p {
 }
 @media (min-width: 1024px) {
   #hero {
-    height: 30vh;
+    height: 60vh;
   }
 }
 #hero > div #hero-content {
-  padding: 70px 0px;
+  padding: 80px 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
 @media (min-width: 1024px) {
   #hero > div #hero-content {
-    padding: 220px 600px 0px 100px;
+    padding: 240px 600px 0px 100px;
   }
 }
 #hero > div #hero-content > div {
@@ -556,6 +604,7 @@ footer #f6 > div p {
   padding-bottom: 8px;
   font-size: 14px;
   padding-bottom: 16px;
+  font-weight: 400;
 }
 @media (min-width: 1024px) {
   #hero > div #hero-content > div p {
@@ -564,41 +613,85 @@ footer #f6 > div p {
     padding-bottom: 16px;
   }
 }
-#hero > div #hero-content > div button {
-  font-size: 700;
-  color: white;
-  background-color: var(--red);
-  padding: 10px 40px;
-  border-radius: 50px;
-  border: none;
-}
-@media (min-width: 1024px) {
-  #hero > div #hero-content > div button {
-    padding: 20px 80px;
-  }
-}
 
 /* =============
     quality
 ============= */
+#quality h1 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  #quality h1 {
+    font-size: 40px;
+    padding-bottom: 40px;
+    margin-top: -54px;
+  }
+}
 #quality #quality-bottom {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". quality-content .";
+  text-align: center;
+}
+#quality #quality-bottom h1 {
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 40px;
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom {
+    grid-template-columns: 136px auto 136px;
+  }
 }
 #quality #quality-bottom > div {
   grid-area: quality-content;
+}
+#quality #quality-bottom > div h1 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  padding: 16px;
 }
 #quality #quality-bottom > div ul {
   display: grid;
   gap: 70px;
   margin-top: 70px;
 }
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: " q1 q2 q3";
+    text-align: center;
+  }
+}
 #quality #quality-bottom > div ul li {
   background-color: var(--biege);
   text-align: center;
   border-radius: 10px;
-  padding: 84px 34px 74px;
+  padding: 84px 0px 40px;
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li {
+    padding: 84px 42px 70px;
+  }
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li #q1 {
+    grid-area: q1;
+  }
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li #q2 {
+    grid-area: q2;
+  }
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li #q3 {
+    grid-area: q3;
+  }
 }
 #quality #quality-bottom > div ul li .card-icon {
   background-color: var(--yellow);
@@ -610,11 +703,42 @@ footer #f6 > div p {
   justify-content: center;
   margin: -130px auto 0;
 }
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li .card-icon {
+    height: 140px;
+    width: 140px;
+    margin: -180px auto 0;
+  }
+}
 #quality #quality-bottom > div ul li .card-icon i {
   font-size: 2.5rem;
 }
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li .card-icon i {
+    font-size: 3.125rem;
+  }
+}
 #quality #quality-bottom > div ul li section {
-  padding: 16px;
+  padding: 30px;
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li section {
+    padding: 40px 4px 4px;
+  }
+}
+#quality #quality-bottom > div ul li section > div h2 {
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+@media (min-width: 1024px) {
+  #quality #quality-bottom > div ul li section > div h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+#quality #quality-bottom > div ul li section > div p {
+  font-size: 16px;
+  line-height: 25px;
 }
 /* =============
     process

@@ -8,18 +8,18 @@
     height: 50vh;
 
     @include lg{
-        height: 30vh;
+        height: 60vh;
     }
         
     >div{
         #hero-content {
-            padding: 70px 0px;
+            padding: 80px 0px;
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
 
         @include lg{
-            padding: 220px 600px 0px 100px;
+            padding: 240px 600px 0px 100px;
         }
 
             >div{
@@ -51,29 +51,19 @@
                 p{
                     color: white;
                     padding-bottom: 8px;
-                    font-size: 14px ;
+                    font-size: 14px;
                     padding-bottom: 16px;
+                    font-weight: 400;
 
                     @include lg{
                         font-size: 24px;
                         font-weight: 400;
                         padding-bottom: 16px;
+
                     }
                 }
-                button{
-                    font-size: 700;
-                    color: white;
-                    background-color: var(--red);
-                    padding: 10px 40px;
-                    border-radius: 50px;
-                    border: none;
-
-                    @include lg{
-                       padding: 20px 80px;
-                    }
                 }
             }
         }
     }    
-}
  
