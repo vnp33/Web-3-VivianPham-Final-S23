@@ -1,37 +1,135 @@
 /* =============
     Base
 ============= */
-.padding-content{
-    padding-top: 24px; 
+.padding-content {
+    padding-top: 24px;
 
-    @include lg{
-        padding-top: 60px;
+    @include lg {
+        padding-top: 100px;
     }
 }
 
-.resize-img{
+.resize-img {
     width: 100%;
 }
 
-ul{
+ul {
     padding: 0px;
     margin: 0px;
-    li{
+
+    li {
         padding: 0px;
         margin: 0px;
     }
+
     list-style: none;
 }
 
-.redbutton{
-    a:link, a:visited{
-        color: white;
-        background-color: var(--red);
-        padding: 10px 50px;
-        border-radius: 100px;
-        border: none;
-        display: inline-block;
+.billinginput {
+    background-color: var(--biege);
+    padding: 16px;
+
+    h2 {
+        height: 36px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
     }
 
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        font-size: rem-calc(20);
+    }
+
+    input {
+        padding: 16px 14px;
+        width: 100%;
+        background-color: white;
+        color: gray;
+        box-sizing: border-box;
+    }
+
+    #splitinput {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+        aside {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    li {
+        gap: 8px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+
+        aside {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+
+      
+        }
+    }
+    #paybuttons{
+     
+        div{
+            display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+            gap: 16px;
+
+            aside{
+                width: 100%;
+             
+                button{
+                    width: 100%;
+                    padding: 14px 50px;
+                    background-color: white;
+
+                    i{
+                        font-size: rem-calc(30)
+                    }
+                }
+            }
+        }
+    }
+
+    div{
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    justify-self: center;
+    text-align: center;
+
+        input{
+            width: 30px;
+        }
+        
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    #purchasebutton{
+
+        
+    }
    
+
 }

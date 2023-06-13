@@ -44,132 +44,168 @@
             </div>
         </section>
     </header> 
-    <!-- <section id="content">
-              <h1>Checkout</h1>
-            <div>
-                <section id="checkout">
-                    <div>
-                        <section id="cart">
-                            <div>
-                                <h2>Cart</h2>
+    <section id="checkout">
+        <h1>Checkout</h1>
+        <div>
+            <section id="cart1">
+                <div>
+                    <section id="cart">
+                        <div>
+                            <h2>Cart</h2>
+                            <aside>
                                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                                 <p>1</p>
-                            </div>
-                            <div>
-                                <img src="img/buy/display1.jpg" alt="Tenon Saw" class="resize-img">
+                            </aside>
+                        </div>
+    
+                        <div>
+                            <img src="img/buy/display1.jpg" alt="Tenon Saw" class="resize-img">
+                            <div id="extra">
                                 <p>Tenon Saw</p>
                                 <p><span>with cherry wood handle </span></p>
-                                <p>$275</p>
                             </div>
-            
-                            <div>
-                                <p><span>Total</span></p>
-                                <p>$275</p>
-                            </div>
+                            <p>$275</p>
+                        </div>
+    
+                        <div class="totalborder">
+                            <p><span>Total</span></p>
+                            <p>$275</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+    
+    
+            <form action="">
+                <section>
+                    <div>
+                        <section class="billinginput">
+                            <h1>Billing Address</h1>
+                            <ul>
+                                <li>
+                                    <aside>
+                                        <i class="fa-solid fa-user" style="color: #000000;"></i>
+                                        <p>Full Name</p>
+                                    </aside>
+                                    <input type="text" placeholder="John M. Doe">
+                                </li>
+    
+                                <li>
+                                    <aside>
+                                        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                                        <p>Email</p>
+                                    </aside>
+                                    <input type="text" placeholder="john@example.com">
+                                </li>
+    
+                                <li>
+                                    <aside>
+                                        <i class="fa-solid fa-address-card" style="color: #000000;"></i>
+                                        <p>Address</p>
+                                    </aside>
+                                    <input type="text" placeholder="542 W. 15th Street">
+                                </li>
+    
+                                <li>
+                                    <aside>
+                                        <i class="fa-solid fa-city" style="color: #000000;"></i>
+                                        <p>City</p>
+                                    </aside>
+                                    <input type="text" placeholder="New York">
+                                </li>
+    
+                                <li id="splitinput">
+    
+                                    <aside>
+                                        <p>State</p>
+                                        <input type="text" placeholder="NY">
+                                    </aside>
+    
+                                    <aside>
+                                        <p>Zip</p>
+                                        <input type="text" placeholder="10001">
+                                    </aside>
+    
+                                </li>
+    
+    
+                            </ul>
+                        </section>
+    
+                        <section class="billinginput">
+                            <h1>Payment</h1>
+    
+                            <ul>
+                                <li id="paybuttons">
+                                    <p>Other Forms of Payment</p>
+                                    <div>
+                                        <aside>
+                                            <button>
+                                                <i class="fa-brands fa-apple-pay" style="color: #000000;"></i>
+                                            </button>
+                                        </aside>
+                                        <aside>
+                                            <button>
+                                                <i class="fa-brands fa-paypal" style="color: #000000;"></i>
+                                            </button>
+                                        </aside>
+    
+                                    </div>
+    
+                                </li>
+    
+                                <li>
+                                    <hr width="100%" color="black">
+    
+                                    <p>Name on Card</p>
+                                    <form action="#">
+                                        <input type="text" placeholder="John More Doe">
+                                </li>
+    
+                                <li>
+                                    <p>Credit Card Number</p>
+                                    <form action="#">
+                                        <input type="number" placeholder="1111-2222-3333-4444">
+                                </li>
+    
+                                <li>
+                                    <p>Exp Month</p>
+                                    <form action="#">
+                                        <input type="text" placeholder="Septmeber">
+                                </li>
+    
+                                <li id="splitinput">
+                                    <aside>
+                                        <p>Exp Year</p>
+                                        <input type="number" placeholder="2023">
+                                    </aside>
+    
+                                    <aside>
+                                        <p>CVV</p>
+                                        <input type="number" placeholder="001">
+                                    </aside>
+                                </li>
+    
+                                <div>
+                                    <input type="checkbox">
+                                    <p>Shipping address same as billing</p>
+                                    
+                                </div>
+    
+                                <div id="purchasebutton">
+                                    <a href="thankyou.html">Purchase</a>
+                                </div>
+                            </ul>
                         </section>
                     </div>
                 </section>
-    
-        
-                <form action="">
-                    <section id="checkout">
-                        <div>
-                            <section id="billing">
-                                <h2>Billing Address</h2>
-                                <div>
-                                    <i class="fa-solid fa-user" style="color: #000000;"></i>
-                                    <p>Full Name</p>
-                                    <input type="text" placeholder="John M. Doe">
-                
-                                    <i class="fa-solid fa-envelope" style="color: #000000;"></i>
-                                    <p>Email</p>
-                                    <input type="text" placeholder="john@example.com">
-                
-                                    <i class="fa-solid fa-address-card" style="color: #000000;"></i>
-                                    <p>Address</p>
-                                    <input type="text" placeholder="542 W. 15th Street">
-                
-                                    <i class="fa-solid fa-city" style="color: #000000;"></i>
-                                    <p>City</p>
-                                    <input type="text" placeholder="New York">
-                
-                                    <p>State</p>
-                                    <input type="text" placeholder="NY">
-                
-                                    <p>Zip</p>
-                                    <input type="text" placeholder="10001">
-                                </div>
-                            </section>
-                
-                            <section id="payment">
-                                <h1>Payment</h1>
-                
-                                <div>
-                                    <p>Other Forms of Payment</p>
-                                    <button>
-                                        <i class="fa-brands fa-apple-pay" style="color: #000000;"></i>
-                                    </button>
-                
-                                    <button>
-                                        <i class="fa-brands fa-paypal" style="color: #000000;"></i>
-                                    </button>
-                
-                                    <hr width="100%" color="black">
-                
-                                    <p>Name on Card</p>
-                                    <form action="#">
-                                    <input type="text" placeholder="John More Doe">
-                
-                                    <p>Credit Card Number</p>
-                                    <form action="#">
-                                    <input type="number" placeholder="1111-2222-3333-4444">
-                
-                                    <p>Exp Month</p>
-                                    <form action="#">
-                                    <input type="text" placeholder="Septmeber">
-                
-                                    <p>Exp Year</p>
-                                    <input type="number" placeholder="2023">
-                
-                                    <p>CVV</p>
-                                    <input type="number" placeholder="001">
-                
-                                    <form action="#">
-                                    <input type="checkbox">
-                                    <p>Shipping address same as billing</p>
-                                    <a href="thankyou.html">Purchase</a>
-                                </div>
-                            </section>
-                        </div>
-                    </section>
-                </form>
-            </div>
-    </section> -->
-    
-    
-    
-    
-    
-    <section id="checkout-content">
-        <div>
-            <section id="cart">
-                <ul>
-                    <li>
-                        <aside>
-                            <i> <i class="fa-solid fa-user" style="color: #000000;"></i></i>
-                            <h1>Full Name</h1>
-                        </aside>
-            
-                        <input type="text" placeholder="John M. Doe">
-                    </li>               
-                </ul>
-            </section>
+            </form>
         </div>
-    </section>
-     
+    </section> 
     <footer>
         <section id="footer-top">
-            <div>
+            
+            <div id="f-logo">
                 <img src="img/global/LieNielsenLogo.svg" alt="Lie Nielsen Logo">
             </div>
         </section>
@@ -178,9 +214,8 @@
             <div>
                 <section id="f2">
                     <h1>Our Company</h1>
-                    <p>Contact Us</p>
-                    <p>264 Stirling Road<b>Warren, ME 04864</b></p>
                     <a href="#">(800)-327-2520</a>
+                    <p>264 Stirling RD<br>Warren, ME 04864</br></p>
                 </section>
     
                 <section id="f3">
@@ -207,11 +242,9 @@
     
                 <section id="f5">
                     <h1>Stay Updated by Signing Up to Our Newsletter</h1>
-    
-                    <form action="#">
                         <input type="email" placeholder="Your Email Address">
                         <div>
-                            <button>Subscribe</button>
+                            <button class="yellowsub">Sign Up</button>
                         </div>
                         <p>By subscribing, you agree with our <span>Privacy Policy</span> and provide consent to receive
                             updates
@@ -222,12 +255,7 @@
         </section>
     
             <section id="f6">
-                <aside class="divide-line"></aside>
-    
-                <div>
-                    <p>© 1995 - 2023 Lie-Nielsen Toolworks | <span>Privacy Policy</span> | <span>Terms and Services</span>
-                    </p>
-                </div>
+                  <p>© 1995 - 2023 Lie-Nielsen Toolworks | Privacy Policy | Terms & Services</p>
             </section>
     </footer>
     <script src="js/scripts-min.js"></script>

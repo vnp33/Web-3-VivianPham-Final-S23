@@ -338,7 +338,7 @@ template {
 }
 @media (min-width: 1024px) {
   .padding-content {
-    padding-top: 60px;
+    padding-top: 100px;
   }
 }
 
@@ -356,15 +356,86 @@ ul li {
   margin: 0px;
 }
 
-.redbutton a:link, .redbutton a:visited {
-  color: white;
-  background-color: var(--red);
-  padding: 10px 50px;
-  border-radius: 100px;
-  border: none;
-  display: inline-block;
+.billinginput {
+  background-color: var(--biege);
+  padding: 16px;
 }
-
+.billinginput h2 {
+  height: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+}
+.billinginput p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.billinginput i {
+  font-size: 1.25rem;
+}
+.billinginput input {
+  padding: 16px 14px;
+  width: 100%;
+  background-color: white;
+  color: gray;
+  box-sizing: border-box;
+}
+.billinginput #splitinput {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.billinginput #splitinput aside {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.billinginput li {
+  gap: 8px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.billinginput li aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.billinginput #paybuttons div {
+  display: flex;
+  gap: 16px;
+}
+.billinginput #paybuttons div aside {
+  width: 100%;
+}
+.billinginput #paybuttons div aside button {
+  width: 100%;
+  padding: 14px 50px;
+  background-color: white;
+}
+.billinginput #paybuttons div aside button i {
+  font-size: 1.875rem;
+}
+.billinginput div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  justify-self: center;
+  text-align: center;
+}
+.billinginput div input {
+  width: 30px;
+}
+.billinginput div p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
 /* =============
     Typography
 ============= */
@@ -395,20 +466,6 @@ button {
   cursor: pointer;
 }
 
-.redlink:link, .redlink:visited {
-  background-color: var(--redDark);
-  padding: 12px 16px;
-  display: inline-block;
-  margin-top: 8px;
-  color: black;
-  font-weight: 600;
-  font-size: 0.875rem;
-  transition: 0.25s;
-}
-.redlink:link:hover, .redlink:link:active, .redlink:visited:hover, .redlink:visited:active {
-  background-color: var(--redDark);
-}
-
 .redbutton {
   background-color: var(--red);
   padding: 14px 50px;
@@ -425,6 +482,27 @@ button {
 }
 @media (min-width: 1024px) {
   .redbutton {
+    padding: 20px 80px;
+    font-size: 20px;
+  }
+}
+
+.whitebutton {
+  background-color: white;
+  padding: 14px 30px;
+  display: inline-block;
+  color: black;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: 0.25s;
+  border-radius: 100px;
+  border: none;
+}
+.whitebutton:hover {
+  border: 3px solid var(--redDark);
+}
+@media (min-width: 1024px) {
+  .whitebutton {
     padding: 20px 80px;
     font-size: 20px;
   }
@@ -486,6 +564,7 @@ header #search > div form button {
     Footer
 ============= */
 footer {
+  border-top: 20px solid var(--yellowLight);
   background-color: var(--redDark);
 }
 footer h1 {
@@ -494,11 +573,23 @@ footer h1 {
 }
 footer p {
   font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+}
+footer a {
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
 }
 footer #footer-top {
   display: grid;
   grid-template-columns: 32% auto;
   grid-template-areas: " .footer-top. ";
+}
+@media (min-width: 1024px) {
+  footer #footer-top {
+    grid-template-columns: 16px auto;
+  }
 }
 footer #footer-top > div {
   grid-area: footer-top;
@@ -512,9 +603,15 @@ footer #footer-content {
 footer #footer-content > div {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "f2 f3 f4" "f5 f5 f5";
   gap: 16px;
+}
+@media (min-width: 1024px) {
+  footer #footer-content > div {
+    grid-template-columns: 30% auto;
+    grid-template-areas: ".. f2 f3 f4" ".. f5 f5";
+  }
 }
 footer #footer-content > div h1 {
   color: var(--yellow);
@@ -537,29 +634,41 @@ footer #footer-content > div #f4 {
 footer #footer-content > div #f4 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+footer #footer-content > div #f4 ul li {
+  margin-left: -16px;
+}
+footer #footer-content > div #f4 ul li i {
+  font-size: 1.25rem;
 }
 footer #footer-content > div #f5 {
   grid-area: f5;
+  padding-bottom: 16px;
+}
+footer #footer-content > div #f5 input {
+  padding: 16px;
+}
+footer #footer-content > div #f5 .yellowsub {
+  border: none;
+  color: white;
+  background-color: var(--yellow);
+  padding: 14px 20px;
+  border-radius: 0px 30px 30px 0px;
 }
 footer #f6 {
+  padding: 16px 0px;
+  border-top: 5px solid white;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". f6 .";
   color: white;
-}
-footer #f6 .divide-line {
-  border: 1px solid #000;
-  height: 1px;
-  background-color: white;
-  width: 100%;
-  margin: 16px 0;
-}
-footer #f6 > div p {
+  text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
 }
+
 /* =============
     hero
 ============= */
@@ -843,8 +952,12 @@ footer #f6 > div p {
     lineup
 ============= */
 #lineup h1 {
-  margin: -32px 0px 60px;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #lineup h1 {
+    margin: -32px 0px 60px;
+  }
 }
 #lineup #lineup-bottom {
   display: grid;
@@ -937,6 +1050,7 @@ footer #f6 > div p {
     buy
 ============= */
 #buy {
+  margin: 40px 0px 50px;
   background-color: var(--tan);
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -958,23 +1072,100 @@ footer #f6 > div p {
   width: 100px;
 }
 #buy > div #buy2 {
+  padding-bottom: 40px;
   color: white;
+}
+#buy > div #buy2 > div h1 {
+  font-family: "Merriweather";
+  font-size: 24px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+#buy > div #buy2 > div ul li h3 {
+  padding-bottom: 8px;
+  font-size: 14px;
 }
 #buy > div #buy2 > div ul li aside {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-bottom: 8px;
 }
-#buy > div #buy2 > div ul li aside button {
-  background-color: red;
-  padding: 10px 20px;
-}
-#buy > div #buy2 > div ul li .c-handles img {
+#buy > div #buy2 > div ul li .c-options img {
+  text-align: center;
   align-content: center;
   border-radius: 100px;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
+}
+#buy > div #buy2 > div ul li .c-price {
+  text-align: center;
+}
+#buy > div #buy2 > div ul li .c-price h3 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
 }
 
+#checkout {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+  text-align: center;
+}
+#checkout > div {
+  grid-area: content;
+}
+#checkout > div #cart1 {
+  background-color: var(--biege);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 16px;
+}
+#checkout > div #cart1 > div #cart div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: end;
+  gap: 8px;
+}
+#checkout > div #cart1 > div #cart div aside {
+  display: flex;
+  align-content: space-between;
+  gap: 8px;
+}
+#checkout > div #cart1 > div #cart div #extra {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 32px 0px;
+  align-items: flex-start;
+}
+#checkout > div #cart1 > div #cart div #extra p {
+  font-size: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 8px;
+}
+#checkout > div #cart1 > div #cart div #extra span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+#checkout > div #cart1 > div #cart div img {
+  height: 15vh;
+  width: 25vh;
+}
+#checkout > div #cart1 > div #cart .totalborder {
+  border-top: 3px solid gray;
+  padding-top: 8px;
+}
+#checkout #cart2 {
+  margin-top: 24px;
+  background-color: var(--biege);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". cart2 .";
+}
 #checkout-content {
   display: grid;
   grid-template-columns: 16px auto 16px;

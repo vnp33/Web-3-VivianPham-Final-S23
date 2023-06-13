@@ -2,7 +2,8 @@
     buy
 ============= */
 #buy{
-    background-color: var(--tan);
+        margin: 40px 0px 50px;
+        background-color: var(--tan);
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ".buy.";
@@ -31,79 +32,53 @@
         }
 
         #buy2{
-            
+            padding-bottom: 40px;
             color: white;
             >div{
                 h1{
-
+                    font-family: 'Merriweather';
+                    font-size: 24px;
+                    padding-bottom: 16px;
+                    text-align: center;
+                    
                 }
                 ul{
-               
+                
+                    
                     li{
-
-
+                
+                        h3{
+                            padding-bottom: 8px;
+                            font-size:14px ;
+                        }
                         aside{
                             display: flex;
-                            justify-content: space-around;
+                            justify-content: space-evenly;
+                            padding-bottom: 8px;
+                            
+                        }
 
-                            button{
-                                // border: 1px solid blue;
-                                background-color: red;
-                                padding: 10px 20px;
+                       .c-options{
+                            img{
+                                text-align: center;
+                                align-content: center;
+                                border-radius: 100px;
+                                height: 50px;
+                                width: 50px;
+
+                                
                             }
                             
                         }
 
-                        
-
-
-                        #c-saw{
-                            // color: p;
-                            // display: flex;
-                            // justify-content: space-evenly;
-                            // width: 100%;
-                            // >div{
-                               
-                                
-                            //     h3{
-                            //         aside{
-                            //             button{
-                            //                 border-radius: 0%;
-                            //             }
-                            //         }
-                            //     }
-                            // }
+                        .c-price{
+                            text-align: center;
+                            h3{
+                                font-family: 'Merriweather', serif;
+                                font-size: 24px;
+                            }
 
                         }
-
-                        
-
-                        
-                        // .c-blades{
-
-                        //     section{
-                        //         justify-content: space-around;
-                        //     }
-
-                        // }
-                       .c-handles{
-                        // h3{
-
-                        // }
-                       
-                        img{
-                           align-content: center;
-                            border-radius: 100px;
-                            height: 30px;
-                            width: 30px;
-                        }
-                       }
-                    //    .c-price{
-                    //     h3{
-                    //     }
-                    //     button{
-
-                    //     }
                        }
                     }
                 }
