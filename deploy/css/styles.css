@@ -1085,29 +1085,45 @@ footer #f6 {
 #buy > div #buy2 > div h1 {
   font-family: "Merriweather";
   font-size: 24px;
-  padding-bottom: 16px;
+  padding: 16px 0px;
   text-align: center;
 }
-#buy > div #buy2 > div ul li h3 {
+#buy > div #buy2 > div ul li .c-options {
+  padding: 4px 0px;
+}
+#buy > div #buy2 > div ul li .c-options h3 {
   padding-bottom: 8px;
   font-size: 14px;
 }
-#buy > div #buy2 > div ul li aside {
+#buy > div #buy2 > div ul li .c-options aside {
+  padding-bottom: 8px;
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 8px;
 }
-#buy > div #buy2 > div ul li .c-options img {
+#buy > div #buy2 > div ul li .c-handles aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#buy > div #buy2 > div ul li .c-handles aside div {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  align-content: center;
-  border-radius: 100px;
-  height: 50px;
-  width: 50px;
+}
+#buy > div #buy2 > div ul li .c-handles aside div img {
+  padding-top: 8px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+#buy > div #buy2 > div ul li .c-handles aside div p {
+  padding: 8px;
 }
 #buy > div #buy2 > div ul li .c-price {
   text-align: center;
 }
 #buy > div #buy2 > div ul li .c-price h3 {
+  padding: 8px 0px;
   font-family: "Merriweather", serif;
   font-size: 24px;
 }

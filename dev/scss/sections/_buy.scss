@@ -38,7 +38,7 @@
                 h1{
                     font-family: 'Merriweather';
                     font-size: 24px;
-                    padding-bottom: 16px;
+                    padding: 16px 0px;
                     text-align: center;
                     
                 }
@@ -47,41 +47,64 @@
                     
                     li{
                 
-                        h3{
-                            padding-bottom: 8px;
-                            font-size:14px ;
-                        }
-                        aside{
-                            display: flex;
-                            justify-content: space-evenly;
-                            padding-bottom: 8px;
-                            
-                        }
-
+                    
                        .c-options{
-                            img{
-                                text-align: center;
-                                align-content: center;
-                                border-radius: 100px;
-                                height: 50px;
-                                width: 50px;
-
-                                
-                            }
-                            
-                        }
-
-                        .c-price{
-                            text-align: center;
+                        padding: 4px 0px;
                             h3{
-                                font-family: 'Merriweather', serif;
-                                font-size: 24px;
+                                padding-bottom: 8px;
+                                font-size:14px ;
                             }
+                            aside{
+                                padding-bottom: 8px;
+                                display: flex;
+                                justify-content: space-evenly;
+                            }
+                        }
+
+                       .c-handles{
+                        h3{
 
                         }
+
+                      
+                        aside{
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+
+                            div{
+                               display: flex; 
+                               flex-direction: column;
+                               text-align: center;
+
+                               img{
+                                padding-top:8px;
+                                height:60px;
+                                width: 60px;
+                                border-radius: 100%;
+                            }      
+
+                            p{
+                                padding: 8px;
+                            }
+                            }
+                           
+                        }
+                       
                        }
+                       .c-price{
+                        text-align: center;
+                        h3{
+                            padding: 8px 0px;
+                            font-family: 'Merriweather', serif;
+                            font-size: 24px;
+                        }
+
+                    }
                     }
                 }
             }
         }
     }
+}
