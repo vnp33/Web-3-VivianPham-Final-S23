@@ -566,6 +566,10 @@ header #search > div form button {
 footer {
   border-top: 20px solid var(--yellowLight);
   background-color: var(--redDark);
+  padding: 48px 0px;
+}
+footer span {
+  text-decoration: underline;
 }
 footer h1 {
   font-weight: 700;
@@ -593,7 +597,7 @@ footer #footer-top {
 }
 footer #footer-top > div {
   grid-area: footer-top;
-  padding: 24px 0px;
+  padding-bottom: 24px;
 }
 footer #footer-content {
   display: grid;
@@ -644,24 +648,27 @@ footer #footer-content > div #f4 ul li i {
 }
 footer #footer-content > div #f5 {
   grid-area: f5;
-  padding-bottom: 16px;
+  padding: 16px 0px;
 }
-footer #footer-content > div #f5 input {
-  padding: 16px;
+footer #footer-content > div #f5 > div {
+  padding: 8px 0px;
 }
-footer #footer-content > div #f5 .yellowsub {
+footer #footer-content > div #f5 > div input {
+  padding: 14px 66px 14px 8px;
+  border: none;
+}
+footer #footer-content > div #f5 > div .yellowsub {
+  margin-left: -5px;
   border: none;
   color: white;
   background-color: var(--yellow);
-  padding: 14px 20px;
+  padding: 14px 24px;
   border-radius: 0px 30px 30px 0px;
 }
 footer #f6 {
-  padding: 16px 0px;
+  padding: 16px;
   border-top: 5px solid white;
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". f6 .";
   color: white;
   text-align: center;
   font-size: 12px;
