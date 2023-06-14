@@ -957,6 +957,11 @@ footer #f6 {
 /* =============
     lineup
 ============= */
+@media (min-width: 1024px) {
+  #lineup {
+    padding-bottom: 100px;
+  }
+}
 #lineup h1 {
   text-align: center;
 }
@@ -1003,7 +1008,7 @@ footer #f6 {
 }
 @media (min-width: 1024px) {
   #lineup #lineup-bottom ul li .sawimg {
-    margin: 0px 90px -100px;
+    margin: 0px 90px -120px;
   }
 }
 #lineup #lineup-bottom ul li .sawimg img {
@@ -1023,7 +1028,7 @@ footer #f6 {
 }
 @media (min-width: 1024px) {
   #lineup #lineup-bottom ul li section {
-    padding: 40px 40px;
+    padding: 40px 20px;
   }
 }
 @media (min-width: 1024px) {

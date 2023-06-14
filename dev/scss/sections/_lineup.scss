@@ -2,6 +2,10 @@
     lineup
 ============= */
 #lineup {
+
+    @include lg{
+        padding-bottom: 100px;
+    }
     h1 {
         text-align: center;
 
@@ -47,7 +51,7 @@
                     margin:  0px 90px -70px;
 
                     @include lg{
-                        margin:  0px 90px -100px;
+                        margin:  0px 90px -120px;
                     }
 
                     img{
@@ -69,7 +73,7 @@
                     padding: 84px 36px 50px;
 
                     @include lg{
-                        padding: 40px 40px ;
+                        padding: 40px 20px ;
                     }
 
 
