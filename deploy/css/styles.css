@@ -537,27 +537,26 @@ a {
     Header
 ============= */
 header {
-  color: white;
-}
-header #logo-nav {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
   background: var(--redDark);
+}
+header > div {
+  grid-area: header;
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ".  logo-nav .";
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "menu menu";
 }
-header #logo-nav div {
-  grid-area: logo-nav;
+header #log-nav {
+  border: 1px solid pink;
+  grid-area: logo;
 }
-header #search {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ".  search .";
+header #burger {
+  grid-area: burger;
 }
-header #search > div {
-  grid-area: search;
-}
-header #search > div form button {
-  background-color: var(--yellow);
+header #mainmenu {
+  grid-area: menu;
 }
 
 /* =============
@@ -922,14 +921,14 @@ footer #f6 {
 }
 #process #process-content > div aside {
   background-color: var(--yellowLight);
-  margin: 24px 0;
+  padding: 20px 0;
   text-align: center;
 }
 @media (min-width: 1024px) {
   #process #process-content > div aside {
     margin: 70px 0;
     text-align: left;
-    padding: 150px 0px 0px 100px;
+    padding: 124px 0px 0px 100px;
   }
 }
 #process #process-content > div aside h2 {

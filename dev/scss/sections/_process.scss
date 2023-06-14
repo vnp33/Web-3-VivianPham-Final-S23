@@ -63,13 +63,13 @@
             
                 aside{
                     background-color: var(--yellowLight);
-                    margin: 24px 0;
+                    padding: 20px 0;
                     text-align: center;
 
                     @include lg{
                         margin: 70px 0;
                         text-align: left;
-                        padding: 150px 0px 0px 100px;
+                        padding: 124px 0px 0px 100px;
                     }
                     h2{
                         font-family: 'Merriweather', serif;
