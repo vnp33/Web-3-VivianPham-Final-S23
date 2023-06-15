@@ -356,86 +356,6 @@ ul li {
   margin: 0px;
 }
 
-.billinginput {
-  background-color: var(--biege);
-  padding: 16px;
-}
-.billinginput h2 {
-  height: 36px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-}
-.billinginput p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-}
-.billinginput i {
-  font-size: 1.25rem;
-}
-.billinginput input {
-  padding: 16px 14px;
-  width: 100%;
-  background-color: white;
-  color: gray;
-  box-sizing: border-box;
-}
-.billinginput #splitinput {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-.billinginput #splitinput aside {
-  flex-direction: column;
-  align-items: flex-start;
-}
-.billinginput li {
-  gap: 8px;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-}
-.billinginput li aside {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-.billinginput #paybuttons div {
-  display: flex;
-  gap: 16px;
-}
-.billinginput #paybuttons div aside {
-  width: 100%;
-}
-.billinginput #paybuttons div aside button {
-  width: 100%;
-  padding: 14px 50px;
-  background-color: white;
-}
-.billinginput #paybuttons div aside button i {
-  font-size: 1.875rem;
-}
-.billinginput div {
-  display: flex;
-  flex-direction: row;
-  padding-top: 16px;
-  justify-self: center;
-  text-align: center;
-}
-.billinginput div input {
-  width: 30px;
-}
-.billinginput div p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-}
 /* =============
     Typography
 ============= */
@@ -1107,7 +1027,7 @@ footer #f6 {
 #buy > div #buy2 > div ul li .c-handles aside {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 #buy > div #buy2 > div ul li .c-handles aside div {
   display: flex;
@@ -1141,12 +1061,26 @@ footer #f6 {
 #checkout > div {
   grid-area: content;
 }
+#checkout > div #checkheader {
+  padding: 24px 0px;
+}
+#checkout > div #checkheader h1 {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-size: 30px;
+}
 #checkout > div #cart1 {
+  margin-bottom: 24px;
+  border: 1px solid gray;
   background-color: var(--biege);
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 16px;
+}
+#checkout > div #cart1 h2 {
+  font-weight: 700;
+  font-size: 24px;
 }
 #checkout > div #cart1 > div #cart div {
   display: flex;
@@ -1172,6 +1106,7 @@ footer #f6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 8px;
+  color: gray;
 }
 #checkout > div #cart1 > div #cart div #extra span {
   font-weight: 400;
@@ -1185,6 +1120,91 @@ footer #f6 {
 #checkout > div #cart1 > div #cart .totalborder {
   border-top: 3px solid gray;
   padding-top: 8px;
+}
+#checkout .billinginput {
+  background-color: var(--biege);
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+#checkout .billinginput h2 {
+  height: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+}
+#checkout .billinginput p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+#checkout .billinginput i {
+  font-size: 1.25rem;
+}
+#checkout .billinginput input {
+  padding: 14px 14px;
+  width: 100%;
+  background-color: white;
+  color: gray;
+  box-sizing: border-box;
+}
+#checkout .billinginput #splitinput {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+#checkout .billinginput #splitinput aside {
+  flex-direction: column;
+  align-items: flex-start;
+}
+#checkout .billinginput li {
+  gap: 8px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#checkout .billinginput li aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+#checkout .billinginput #paybuttons div {
+  display: flex;
+  gap: 16px;
+}
+#checkout .billinginput #paybuttons div aside {
+  width: 100%;
+}
+#checkout .billinginput #paybuttons div aside button {
+  width: 100%;
+  padding: 14px 50px;
+  background-color: white;
+}
+#checkout .billinginput #paybuttons div aside button i {
+  font-size: 1.875rem;
+}
+#checkout .billinginput div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  justify-self: center;
+  text-align: center;
+}
+#checkout .billinginput div input {
+  width: 14px;
+}
+#checkout .billinginput div p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+#checkout .billinginput #purchasebutton {
+  justify-content: center;
 }
 #checkout #cart2 {
   margin-top: 24px;
@@ -1229,17 +1249,37 @@ footer #f6 {
   text-align: center;
   padding: 0px 16px;
 }
+@media (min-width: 1024px) {
+  #thankyou-content {
+    height: 40vh;
+  }
+}
 #thankyou-content h1 {
   padding-bottom: 16px;
 }
+@media (min-width: 1024px) {
+  #thankyou-content h1 {
+    font-size: 60px;
+  }
+}
 #thankyou-content h2 {
   padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #thankyou-content h2 {
+    font-size: 40px;
+  }
 }
 #thankyou-content h2 .order-number {
   text-decoration: underline;
 }
 #thankyou-content p {
   padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  #thankyou-content p {
+    font-size: 30px;
+  }
 }
 #thankyou-content p .delivery {
   color: rgb(194, 194, 194);

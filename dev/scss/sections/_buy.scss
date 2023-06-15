@@ -9,6 +9,7 @@
         grid-template-areas: ".buy.";
     >div{
         grid-area: buy;
+        
         #buy1{
             >div{
                 #d1{
@@ -71,7 +72,7 @@
 
                             display: flex;
                             flex-direction: row;
-                            justify-content: space-around;
+                            justify-content: space-evenly;
 
                             div{
                                display: flex; 
