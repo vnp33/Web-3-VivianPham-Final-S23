@@ -504,26 +504,38 @@ footer a {
   font-weight: 400;
   height: 32px;
 }
-footer #footer-top {
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 130px auto 130px;
+    grid-template-areas: " .footerlg. ";
+  }
+}
+@media (min-width: 1024px) {
+  footer div {
+    grid-area: footerlg;
+  }
+}
+footer div #footer-top {
   display: grid;
   grid-template-columns: 32% auto;
   grid-template-areas: " .footer-top. ";
 }
 @media (min-width: 1024px) {
-  footer #footer-top {
+  footer div #footer-top {
     grid-template-columns: 16px auto;
   }
 }
-footer #footer-top > div {
+footer div #footer-top > div {
   grid-area: footer-top;
   padding-bottom: 24px;
 }
-footer #footer-content {
+footer div #footer-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: " .footer. ";
 }
-footer #footer-content > div {
+footer div #footer-content > div {
   grid-area: footer;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -531,58 +543,129 @@ footer #footer-content > div {
   gap: 16px;
 }
 @media (min-width: 1024px) {
-  footer #footer-content > div {
-    grid-template-columns: 30% auto;
-    grid-template-areas: ".. f2 f3 f4" ".. f5 f5";
+  footer div #footer-content > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: " f2 f3 f4" "f5 f5 f5";
   }
 }
-footer #footer-content > div h1 {
+footer div #footer-content > div h1 {
   color: var(--yellow);
 }
-footer #footer-content > div p {
+@media (min-width: 1024px) {
+  footer div #footer-content > div h1 {
+    font-size: 20px;
+  }
+}
+footer div #footer-content > div p {
   color: white;
 }
-footer #footer-content > div a {
+@media (min-width: 1024px) {
+  footer div #footer-content > div p {
+    font-size: 20px;
+  }
+}
+footer div #footer-content > div a {
   color: white;
 }
-footer #footer-content > div #f2 {
+@media (min-width: 1024px) {
+  footer div #footer-content > div a {
+    font-size: 20px;
+  }
+}
+footer div #footer-content > div #f2 {
   grid-area: f2;
 }
-footer #footer-content > div #f3 {
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f2 h1 {
+    padding-bottom: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f2 a {
+    padding-bottom: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f2 p {
+    padding-bottom: 8px;
+  }
+}
+footer div #footer-content > div #f3 {
   grid-area: f3;
 }
-footer #footer-content > div #f4 {
+footer div #footer-content > div #f3 h1 {
+  padding-bottom: 8px;
+}
+footer div #footer-content > div #f3 li {
+  padding-bottom: 8px;
+}
+footer div #footer-content > div #f4 {
   grid-area: f4;
 }
-footer #footer-content > div #f4 ul {
+footer div #footer-content > div #f4 ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-footer #footer-content > div #f4 ul li {
+footer div #footer-content > div #f4 ul li {
   margin-left: -16px;
 }
-footer #footer-content > div #f4 ul li i {
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f4 ul li {
+    margin-left: -40px;
+  }
+}
+footer div #footer-content > div #f4 ul li i {
   font-size: 1.25rem;
 }
-footer #footer-content > div #f5 {
-  grid-area: f5;
-  padding: 16px 0px;
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f4 ul li i {
+    padding-top: 8px;
+    font-size: 3.125rem;
+  }
 }
-footer #footer-content > div #f5 > div {
+footer div #footer-content > div #f5 {
+  grid-area: f5;
+  padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f5 {
+    padding-bottom: 40px;
+  }
+}
+footer div #footer-content > div #f5 > div {
   padding: 8px 0px;
 }
-footer #footer-content > div #f5 > div input {
+footer div #footer-content > div #f5 input {
   padding: 14px 66px 14px 8px;
   border: none;
 }
-footer #footer-content > div #f5 > div .yellowsub {
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f5 input {
+    padding: 20px 600px 20px 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f5 p {
+    font-size: 16px;
+  }
+}
+footer div #footer-content > div #f5 .yellowsub {
   margin-left: -5px;
   border: none;
   color: white;
   background-color: var(--yellow);
   padding: 14px 24px;
   border-radius: 0px 30px 30px 0px;
+}
+@media (min-width: 1024px) {
+  footer div #footer-content > div #f5 .yellowsub {
+    font-size: 20px;
+    margin-left: -5px;
+    padding: 20px 130px;
+    border-radius: 0px 30px 30px 0px;
+  }
 }
 footer #f6 {
   padding: 16px;
@@ -593,6 +676,18 @@ footer #f6 {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  footer #f6 {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  footer #f6 p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /* =============

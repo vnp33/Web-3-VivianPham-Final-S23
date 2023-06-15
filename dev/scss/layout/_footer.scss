@@ -2,9 +2,10 @@
     Footer
 ============= */
 footer {
-    span{
+    span {
         text-decoration: underline;
     }
+
     border-top: 20px solid var(--yellowLight);
 
     h1 {
@@ -25,111 +26,213 @@ footer {
     }
 
     background-color: var(--redDark);
-    padding: 48px 0px
-;
+    padding: 48px 0px;
 
-    #footer-top {
+    @include lg {
         display: grid;
-        grid-template-columns: 32% auto;
-        grid-template-areas: " .footer-top. ";
-
-        @include lg{
-
-            grid-template-columns: 16px auto;
-        }
-
-        >div {
-            grid-area: footer-top;
-
-            padding-bottom: 24px;
-
-        }
+        grid-template-columns: 130px auto 130px;
+        grid-template-areas: " .footerlg. ";
     }
 
-    #footer-content {
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: " .footer. ";
+    div {
+        @include lg {
+            grid-area: footerlg;
+        }
 
-        >div {
-            grid-area: footer;
-
+        #footer-top {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas:
-                "f2 f3 f4"
-                "f5 f5 f5";
-            gap: 16px;
+            grid-template-columns: 32% auto;
+            grid-template-areas: " .footer-top. ";
 
-            @include lg{
-                grid-template-columns: 30% auto;
+            @include lg {
+
+                grid-template-columns: 16px auto;
+            }
+
+            >div {
+                grid-area: footer-top;
+
+                padding-bottom: 24px;
+
+            }
+        }
+
+        #footer-content {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: " .footer. ";
+
+            >div {
+                grid-area: footer;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
                 grid-template-areas:
-                ".. f2 f3 f4"
-                ".. f5 f5"; 
-            }
+                    "f2 f3 f4"
+                    "f5 f5 f5";
+                gap: 16px;
 
-            h1 {
-                color: var(--yellow);
-            }
+                @include lg {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas:
+                        " f2 f3 f4"
+                        "f5 f5 f5";
+                }
 
-            p {
-                color: white;
-            }
+                h1 {
+                    color: var(--yellow);
 
-            a {
-                color: white;
-            }
+                    @include lg {
+                        font-size: 20px;
 
-            #f2 {
-                grid-area: f2;
+                    }
 
-            }
+                }
 
-            #f3 {
-                grid-area: f3;
-            }
+                p {
+                    color: white;
 
-            #f4 {
-                grid-area: f4;
+                    @include lg {
+                        font-size: 20px;
 
-                ul {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
+                    }
+                }
+
+                a {
+                    color: white;
+
+                    @include lg {
+                        font-size: 20px;
+
+                    }
+                }
+
+                #f2 {
+                    grid-area: f2;
+
+                    h1 {
+                        @include lg {
+                            padding-bottom: 8px;
+
+                        }
+                    }
+
+                    a {
+                        @include lg {
+                            padding-bottom: 8px;
+                        }
+                    }
+
+                    p {
+                        @include lg {
+                            padding-bottom: 8px;
+                        }
+                    }
+
+
+                }
+
+                #f3 {
+                    grid-area: f3;
+
+                    h1 {
+                        padding-bottom: 8px;
+                    }
 
                     li {
-                        margin-left: -16px;
+                        padding-bottom: 8px;
+                    }
+                }
 
-                        i {
-                            font-size: rem-calc(20);
+                #f4 {
+                    grid-area: f4;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+
+                        li {
+                            margin-left: -16px;
+
+                            @include lg {
+                                margin-left: -40px;
+                            }
+
+                            i {
+                                font-size: rem-calc(20);
+
+                                @include lg {
+                                    padding-top: 8px;
+                                    font-size: rem-calc(50);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #f5 {
+
+                    grid-area: f5;
+
+                    @include lg {
+                        padding-bottom: 40px;
+                    }
+
+                    padding-bottom: 16px;
+
+                    >div {
+
+                        padding: 8px 0px;
+
+
+                    }
+
+                    input {
+                        padding: 14px 66px 14px 8px;
+                        border: none;
+
+                        @include lg {
+                            padding: 20px 600px 20px 10px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    p {
+                        @include lg {
+                            font-size: 16px;
+                        }
+
+                    }
+
+                    .yellowsub {
+                        margin-left: -5px;
+                        border: none;
+                        color: white;
+                        background-color: var(--yellow);
+                        padding: 14px 24px;
+                        border-radius: 0px 30px 30px 0px;
+
+                        @include lg {
+                            font-size: 20px;
+                            margin-left: -5px;
+                            padding: 20px 130px;
+                            border-radius: 0px 30px 30px 0px;
                         }
                     }
                 }
             }
-
-            #f5 {
-                grid-area: f5;
-               padding: 16px 0px;
-                >div{
-                    padding: 8px 0px;
-                    input{
-                        padding: 14px 66px 14px 8px;
-                        border: none;
-                    }
-                    .yellowsub{
-                    margin-left: -5px;
-                    border: none;
-                    color: white;
-                    background-color: var(--yellow);
-                    padding: 14px 24px;
-                    border-radius: 0px 30px 30px 0px;
-                    }
-                }
-            }
         }
     }
 
+
+
     #f6 {
+
+        @include lg {
+            padding-top: 40px;
+        }
+
         padding: 16px;
         border-top: 5px solid white;
         display: grid;
@@ -138,6 +241,17 @@ footer {
         font-size: 12px;
         font-weight: 400;
         line-height: 20px;
-        
+        width: 100%;
+
+
+        p {
+            @include lg {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+        }
     }
+
+
 }
