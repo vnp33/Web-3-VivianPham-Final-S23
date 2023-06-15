@@ -701,7 +701,7 @@ footer #f6 {
 }
 @media (min-width: 1024px) {
   #hero {
-    height: 60vh;
+    height: 40vh;
   }
 }
 #hero > div #hero-content {
@@ -758,6 +758,9 @@ footer #f6 {
 /* =============
     quality
 ============= */
+#quality img {
+  width: 100%;
+}
 #quality h1 {
   text-align: center;
   font-family: "Merriweather", serif;
@@ -943,7 +946,7 @@ footer #f6 {
   #process #process-content > div aside {
     margin: 70px 0;
     text-align: left;
-    padding: 124px 0px 0px 100px;
+    padding: 210px 0px 0px 100px;
   }
 }
 #process #process-content > div aside h2 {
@@ -1023,7 +1026,7 @@ footer #f6 {
 }
 @media (min-width: 1024px) {
   #lineup #lineup-bottom ul li .sawimg {
-    margin: 0px 90px -120px;
+    margin: 0px 90px -100px;
   }
 }
 #lineup #lineup-bottom ul li .sawimg img {
@@ -1032,7 +1035,7 @@ footer #f6 {
 }
 @media (min-width: 1024px) {
   #lineup #lineup-bottom ul li .sawimg img {
-    height: 18vh;
+    height: 15vh;
     width: 20vh;
   }
 }
@@ -1048,7 +1051,7 @@ footer #f6 {
 }
 @media (min-width: 1024px) {
   #lineup #lineup-bottom ul li section > div {
-    padding: 0px 0px 0px 400px;
+    padding: 0px 0px 0px 480px;
     text-align: left;
   }
 }
@@ -1082,69 +1085,134 @@ footer #f6 {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".buy.";
 }
+@media (min-width: 1024px) {
+  #buy {
+    background-color: white;
+  }
+}
 #buy > div {
   grid-area: buy;
 }
-#buy > div #buy1 > div #d1 {
+@media (min-width: 1024px) {
+  #buy > div {
+    display: flex;
+    padding: 80px;
+    border-radius: 20px;
+    background-color: var(--tan);
+  }
+}
+#buy > div #buy1 {
   padding-top: 40px;
 }
-#buy > div #buy1 > div ul {
+@media (min-width: 1024px) {
+  #buy > div #buy1 {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #buy > div #buy1 section img {
+    width: 28vh;
+    height: 28vh;
+  }
+}
+#buy > div #buy1 ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 16px;
 }
-#buy > div #buy1 > div ul li {
+@media (min-width: 1024px) {
+  #buy > div #buy1 ul {
+    justify-content: space-evenly;
+  }
+}
+#buy > div #buy1 ul li {
   height: 80px;
   width: 100px;
 }
-#buy > div #buy2 {
+#buy #buy2 {
   padding-bottom: 40px;
   color: white;
 }
-#buy > div #buy2 > div h1 {
+#buy #buy2 > div h1 {
   font-family: "Merriweather";
   font-size: 24px;
   padding: 16px 0px;
   text-align: center;
 }
-#buy > div #buy2 > div ul li .c-options {
+@media (min-width: 1024px) {
+  #buy #buy2 > div h1 {
+    font-family: "Merriweather";
+    font-size: 32px;
+    padding: 16px 0px;
+    text-align: center;
+  }
+}
+#buy #buy2 > div ul {
+  padding-left: 24px;
+}
+#buy #buy2 > div ul li .c-options {
   padding: 4px 0px;
 }
-#buy > div #buy2 > div ul li .c-options h3 {
+#buy #buy2 > div ul li .c-options h3 {
   padding-bottom: 8px;
   font-size: 14px;
 }
-#buy > div #buy2 > div ul li .c-options aside {
+@media (min-width: 1024px) {
+  #buy #buy2 > div ul li .c-options h3 {
+    font-size: 20px;
+  }
+}
+#buy #buy2 > div ul li .c-options aside {
   padding-bottom: 8px;
   display: flex;
   justify-content: space-evenly;
 }
-#buy > div #buy2 > div ul li .c-handles aside {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-#buy > div #buy2 > div ul li .c-handles aside div {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-#buy > div #buy2 > div ul li .c-handles aside div img {
-  padding-top: 8px;
+#buy #buy2 > div ul li .c-handles img {
   height: 60px;
   width: 60px;
   border-radius: 100%;
 }
-#buy > div #buy2 > div ul li .c-handles aside div p {
-  padding: 8px;
+@media (min-width: 1024px) {
+  #buy #buy2 > div ul li .c-handles img {
+    height: 100px;
+    width: 100px;
+  }
 }
-#buy > div #buy2 > div ul li .c-price {
+#buy #buy2 > div ul li .c-handles h3 {
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  #buy #buy2 > div ul li .c-handles h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #buy #buy2 > div ul li .c-handles p {
+    font-size: 20px;
+  }
+}
+#buy #buy2 > div ul li .c-handles aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#buy #buy2 > div ul li .c-handles aside div {
   text-align: center;
 }
-#buy > div #buy2 > div ul li .c-price h3 {
-  padding: 8px 0px;
+#buy #buy2 > div ul li .c-price {
+  text-align: center;
+}
+#buy #buy2 > div ul li .c-price h3 {
+  padding: 16px 0px;
   font-family: "Merriweather", serif;
   font-size: 24px;
+}
+@media (min-width: 1024px) {
+  #buy #buy2 > div ul li .c-price h3 {
+    padding: 30px 0px;
+    font-size: 32px;
+  }
 }
 
 #checkout {

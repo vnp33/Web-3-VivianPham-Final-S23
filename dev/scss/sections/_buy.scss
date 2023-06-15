@@ -1,108 +1,169 @@
 /* =============
     buy
 ============= */
-#buy{
-        margin: 40px 0px 50px;
-        background-color: var(--tan);
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ".buy.";
-    >div{
-        grid-area: buy;
-        
-        #buy1{
-            >div{
-                #d1{
-                    padding-top: 40px;
-                }
-    
-                >div{
-                    
-                }
-                ul{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
 
-                    li{
-                        height: 80px;
-                        width: 100px;
-                    }
-                }
-            } 
+#buy {
+    margin: 40px 0px 50px;
+    background-color: var(--tan);
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ".buy.";
+
+    @include lg {
+        background-color: white;
+    }
+
+    >div {
+
+        grid-area: buy;
+
+        @include lg {
+            display: flex;
+            padding: 80px;
+            border-radius: 20px;
+            background-color: var(--tan);
+            ;
         }
 
-        #buy2{
-            padding-bottom: 40px;
-            color: white;
-            >div{
-                h1{
+        #buy1 {
+            padding-top: 40px;
+            @include lg{
+                padding-top: 0px;
+            }
+
+            section{
+                img{
+                    @include lg{
+                        width: 28vh;
+                        height: 28vh ;
+                    }
+                }
+                
+               
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 16px;
+
+                @include lg{
+                    justify-content: space-evenly;
+
+                }
+
+                li {
+                    height: 80px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    #buy2 {
+
+        padding-bottom: 40px;
+        color: white;
+      
+        >div {
+
+            h1 {
+                font-family: 'Merriweather';
+                font-size: 24px;
+                padding: 16px 0px;
+                text-align: center;
+
+                @include lg {
                     font-family: 'Merriweather';
-                    font-size: 24px;
+                    font-size: 32px;
                     padding: 16px 0px;
                     text-align: center;
-                    
                 }
-                ul{
-                
-                    
-                    li{
-                
-                    
-                       .c-options{
+
+            }
+
+            ul {
+                padding-left: 24px;
+               
+
+                li {
+                  
+                    .c-options {
+
                         padding: 4px 0px;
-                            h3{
-                                padding-bottom: 8px;
-                                font-size:14px ;
-                            }
-                            aside{
-                                padding-bottom: 8px;
-                                display: flex;
-                                justify-content: space-evenly;
+
+                        h3 {
+
+                            padding-bottom: 8px;
+                            font-size: 14px;
+
+
+                            @include lg{
+                                font-size: 20px;
                             }
                         }
 
-                       .c-handles{
+                        aside {
+                            padding-bottom: 8px;
+                            display: flex;
+                            justify-content: space-evenly;
+                        }
+                    }
+
+                    .c-handles {
+                        // border: 5px solid pink;
+
+                        img {
+                            height: 60px;
+                            width: 60px;
+                            border-radius: 100%;
+                            @include lg{
+                                height: 100px;
+                            width: 100px;
+                            }
+                        }
+
                         h3{
+                            font-size: 14px;
 
+                            @include lg{
+                                font-size: 20px;
+                            }
                         }
 
-                      
-                        aside{
+                        p{
+
+                            @include lg{
+                                font-size: 20px;
+                            }
+                        }
+                        aside {
 
                             display: flex;
                             flex-direction: row;
                             justify-content: space-evenly;
-
                             div{
-                               display: flex; 
-                               flex-direction: column;
-                               text-align: center;
-
-                               img{
-                                padding-top:8px;
-                                height:60px;
-                                width: 60px;
-                                border-radius: 100%;
-                            }      
-
-                            p{
-                                padding: 8px;
+                                text-align: center;
                             }
-                            }
-                           
-                        }
-                       
-                       }
-                       .c-price{
-                        text-align: center;
-                        h3{
-                            padding: 8px 0px;
-                            font-family: 'Merriweather', serif;
-                            font-size: 24px;
                         }
 
                     }
+
+                    .c-price {
+                        text-align: center;
+
+                        h3 {
+                            padding: 16px 0px;
+                            font-family: 'Merriweather', serif;
+                            font-size: 24px;
+
+                            @include lg{
+                                padding: 30px 0px;
+                                font-size: 32px;
+                            }
+                        }
+
                     }
                 }
             }

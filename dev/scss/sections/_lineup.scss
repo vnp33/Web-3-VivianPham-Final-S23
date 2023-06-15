@@ -51,7 +51,7 @@
                     margin:  0px 90px -70px;
 
                     @include lg{
-                        margin:  0px 90px -120px;
+                        margin:  0px 90px -100px;
                     }
 
                     img{
@@ -59,7 +59,7 @@
                         width: 25vh;
 
                         @include lg{
-                            height: 18vh;
+                            height: 15vh;
                             width: 20vh;
                         }
 
@@ -79,7 +79,7 @@
 
                     >div {
                         @include lg{
-                            padding: 0px 0px 0px 400px;
+                            padding: 0px 0px 0px 480px;
                             text-align: left;
                         }
                         h2{
