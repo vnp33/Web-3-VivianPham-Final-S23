@@ -1,34 +1,204 @@
 /* =============
     Header
 ============= */
+
+
 header{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
- 
-    background: var(--redDark);
-    >div{
-        grid-area: header ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--redDark);
+    z-index: 500;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    
+    #logo-nav{
+       
+        
+
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 20% auto;
         grid-template-areas: 
         "logo burger"
-        "menu menu";
+        "nav nav";
+
+        @include lg{
+            grid-template-areas: "logo nav";
+        }
+
+        #logo{
+            grid-area: logo;
+        }
     }
 
-    #log-nav{
-        border: 1px solid pink;
-        grid-area: logo;
-    }
-    #burger{
+
+
+        #burger{
+            grid-area: burger;
+            // padding: 16px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            @include lg{
+                display: none;
+            }
+    
+            button{
+                border: none;
+                background-color: transparent;
+                color: black;
+                i{
+                    font-size: rem-calc(25);
+                }
+            }
+            
+    
+        }
+        
+        nav{
+            grid-area: nav;
+            // padding: 16px;
+            ul{
+                li{
+                    text-decoration: none;
+                }
+            }
+            
+        }
       
-        grid-area: burger;
+    }
+    
+  
+   
+    
+    
 
-    }
-    #mainmenu{
-       
-        grid-area: menu;
-    }
+
+// header {
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: 500;
+
+//     #logo-nav {
+//         background-color: var(--redDark);
+//         padding: 24px 16px;
+//         display: grid;
+//         grid-template-columns: 50% auto;
+//         grid-template-areas:
+//             "logo burger"
+//             "nav nav";
+
+//         @include lg {
+//             grid-template-areas: "logo nav";
+//             padding: 30px 130px 30px 130px ;
+
+//             }
+
+//         }
+
+//         #logo-container {
+//             grid-area: logo;
+            
+//         }
+
+//         #burger-container {
+//             grid-area: burger;
+//             display: flex;
+//             justify-content: flex-end;
+//             align-items: center;
+//             width: 100%;
+           
+//             #burger-container {
+//                 position: relative;
+//               }
+              
+
+//             @include lg {
+//                 display: none;
+//             }
+
+//             button {
+//                 border: none;
+//                 background-color: transparent;
+//                 color: var(--white);
+//                 font-size: rem-calc(25);
+//                 margin: 0;
+//                 padding: 0;
+//             }
+//         }
+
+//         nav {
+//             grid-area: nav;
+//             text-align: end;
+
+//             i{
+//                 color: white;
+//                 font-size: rem-calc(24);
+//                 padding-right: 16px;
+//                 padding-left: 16px
+//             }
+
+//         }
+
+//     }
+
+//     #search {
+//         display: grid;
+//         grid-template-columns: 16px auto 16px;
+//         grid-template-areas: ". search .";
+//         background-color: var(--grayLight);
+//         padding: 16px 0;
+//         box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+
+//         @include md {
+//             padding: 24px 0;
+//         }
+
+//         @include xxl {
+//             grid-template-columns: auto 1200px auto;
+//             padding: 30px 0;
+//         }
+//     }
+
+
+
+
+
+
+
+// display: grid;
+// grid-template-columns: 16px auto 16px;
+// grid-template-areas: ". header .";
+
+// background: var(--redDark);
+// >div{
+//     grid-area: header ;
+//     display: grid;
+//     grid-template-columns: 50% auto;
+//     grid-template-areas: 
+//     "logo burger"
+//     "menu menu";
+// }
+
+// #log-nav{
+//     border: 1px solid pink;
+//     grid-area: logo;
+// }
+// #burger{
+
+//     grid-area: burger;
+
+// }
+// #mainmenu{
+
+//     grid-area: menu;
+// }
 
 
 
@@ -56,7 +226,7 @@ header{
 //             grid-area: search;
 //             form{
 //                 input{
-                   
+
 //                 }
 
 //                 button{ 
@@ -66,7 +236,6 @@ header{
 //             }
 //         }
 //     }
-}
 
 
 // header{
@@ -78,10 +247,10 @@ header{
 //     z-index: 500;
 //     padding: 24px 16px;
 //     box-sizing: border-box;
-    
+
 //     #logo-nav{
-       
-        
+
+
 
 //         display: grid;
 //         grid-template-columns: 20% auto;
@@ -112,7 +281,7 @@ header{
 //             @include lg{
 //                 display: none;
 //             }
-    
+
 //             button{
 //                 border: none;
 //                 background-color: transparent;
@@ -121,10 +290,10 @@ header{
 //                     font-size: rem-calc(25);
 //                 }
 //             }
-            
-    
+
+
 //         }
-        
+
 //         nav{
 //             grid-area: nav;
 //             // padding: 16px;
@@ -133,13 +302,13 @@ header{
 //                     text-decoration: none;
 //                 }
 //             }
-            
+
 //         }
-      
+
 //     }
 
 // header {
-	
+
 
 // 	#logo-nav {
 //         position: fixed;
@@ -194,7 +363,7 @@ header{
 //                 color: white ;
 //             }
 // 		}
-		
+
 // 	}
 
 // 	#search {
